@@ -28,6 +28,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <Header />
           {children}
       </>
     )}
