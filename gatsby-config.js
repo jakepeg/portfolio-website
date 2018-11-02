@@ -1,21 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Jake Kemsley',
+    title: 'Jake Kemsley - Freelance Digital Developer',
+    description: 'Customer focussed Digital All-Rounder, with a track record of successfully delivering awesome digital experiences.',
+    keywords: 'Web design, web designer, project manager, web developer, frontend developer, html5 banners, websites, apps, display, edms, games, microsites, landing pages'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-source-contentful',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-      },
-    },
-    'gatsby-plugin-offline',
-  ],
+        spaceId: 'c66kaa3uliew',
+        accessToken: '71fb3137adbf1df4e638d369fab160091410b78d4b08f8bf940a847c09a48cc6'
+      }
+    }
+  ]
 }

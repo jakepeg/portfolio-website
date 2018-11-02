@@ -3,7 +3,7 @@ import './card.css'
 
 const Card = props => (
     <div className="Card">
-        <img src={props.image} />
+        {/* <img src={props.image} /> */}
         <div className="Card-info">
             <p><span className="Card-label">Client</span><br />{props.client}</p>
             <p><span className="Card-label">Project</span><br />{props.project}</p>

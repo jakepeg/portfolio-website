@@ -1,20 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import Card from '../components/card';
-import Section from '../components/section';
-import Wave from '../components/wave';
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import Cards from '../components/cards';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/cell';
+import Header from '../components/header'
+import './index.css'
+import { Link } from 'gatsby'
+import Wave from '../components/wave';
 import styled from 'styled-components'
 
-const SectionCaption = styled.p`
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #94A4BA;
-  text-align: center;
-`
 
 const SectionCellGroup = styled.div`
   max-width: 800px;
@@ -28,9 +24,53 @@ const SectionCellGroup = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `
+const IndexPage = ({ children, data }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+            description
+            keywords
+          }
+        }
+				allContentfulProject(sort: { fields: [createdAt], order: ASC }) {
+          edges {
+            node {
+              client
+              project
+              role
+              technology
+              link  
+              poster {
+                file {
+                  url
+                }
+              }
+              createdAt
+              }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
 
-const IndexPage = () => (
-  <Layout>
+
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: data.site.siteMetadata.description },
+            { name: 'keywords', content: data.site.siteMetadata.keywords },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        <Header />
+        {children}
+
+
     <div className='hero'>
       <div className='heroGroup'>
         <h1>Hi, I'm Jake Kemsley</h1>
@@ -49,41 +89,11 @@ const IndexPage = () => (
 
         <Wave />
       </div>
+    </div>
 
-      <div className="Cards">
-      
-          <h2>Selected Works</h2>
-          <div className="CardGroup">
-            <Card 
-            client="Clemenger BBDO"
-            project="Mercedes New A Class"
-            role="Developer"
-            technology="HTML5 CSS"
-            image={require('../images/poster.jpg')} />
-            <Card 
-            client="Clemenger BBDO"
-            project="Mercedes New A Class"
-            role="Developer"
-            technology="HTML5 CSS"
-            image={require('../images/backup.jpg')} />
-            <Card 
-            client="Clemenger BBDO"
-            project="Mercedes New A Class"
-            role="Developer"
-            technology="HTML5 CSS"
-            image={require('../images/nab.jpg')} />
-      </div>
-      </div>
+        <Cards data={data} />
 
-      <Section
-        image={require('../images/wallpaper2.jpg')}
-        logo={require('../images/logo-react.png')}
-        title="React for Designers"
-        text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." 
-
-        />
-
-      <SectionCaption>12 sections - 6 hours</SectionCaption>
+      <h2>Tools and Skills</h2>
       <SectionCellGroup>
         {staticdata.cells.map(cell => (
           <Cell title={cell.title} image={cell.image} />
@@ -91,7 +101,13 @@ const IndexPage = () => (
       </SectionCellGroup>
 
 
-    </div>
-  </Layout>
+      </>
+    )}
+  />
 )
+
+IndexPage.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 export default IndexPage
