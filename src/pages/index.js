@@ -11,7 +11,6 @@ import { Link } from 'gatsby'
 import Wave from '../components/wave';
 import styled from 'styled-components'
 
-
 const SectionCellGroup = styled.div`
   max-width: 800px;
   margin: 0 auto 100px;
@@ -49,6 +48,8 @@ const IndexPage = ({ children, data }) => (
                 }
               }
               createdAt
+              width
+              height
               }
           }
         }
@@ -99,8 +100,6 @@ const IndexPage = ({ children, data }) => (
           <Cell title={cell.title} image={cell.image} />
         ))}
       </SectionCellGroup>
-
-
       </>
     )}
   />
