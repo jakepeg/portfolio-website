@@ -34,7 +34,7 @@
     height: 250px;
 }
 
-.Card-info:hover {
+ .Card-info:hover {
     opacity: 1;
     background: #1d8cc2;
     height: 250px
@@ -44,7 +44,7 @@
     color: rgba(255,255,255, 1);
     font-weight: 300;
     font-size: 18px;
-    /* align-self: end; */
+    align-self: end;
     margin: 0 0 0 20px;
 }
 
@@ -55,4 +55,12 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 5px;
+}
+
+.showModalStyle {
+  display: block;
+}
+
+.hideModalStyle {
+  display: none;
 }

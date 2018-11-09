@@ -1,45 +1,41 @@
 import React from 'react'
-import styled from 'styled-components'
-
-
-
-const showModalStyle = styled.div`
-  display: block;
-`
-
-const hideModalStyle = styled.div`
-  display: none;
-`
+import './card.css'
+import Iframe from 'react-iframe'
 
 class Modal extends React.Component {
-  state = { visible: true }
+    constructor(props) {
+        super(props);
+        this.state = {
+          visible: false
+        }
+    }
 
-  showModal = () => {
-    this.setState({
-      visible: true,
-    });
-  }
+    showModal = () => {
+      this.setState({
+        visible: true
+      });
+    }
+  
+    hideModal = () => {
+      this.setState({
+        visible: false
+      });
+    }
 
-  showModal = () => {
-    this.setState({
-      visible: false,
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        {/* <Button type="primary" onClick={this.showModal}>
-          Open Modal
-        </Button> */}
-        <div className={this.state.visible ? 'showModalStyle' : 'hideModalStyle'}>
-
-modal content
-
-        </div>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className={this.state.visible ? 'showModalStyle' : 'hideModalStyle'}>
+                <Iframe url={this.props.link}
+                        width={this.props.width}
+                        height={this.props.height}
+                        id="myId"
+                        className="myClassname"
+                        display="initial"
+                        position="relative"
+                        allowFullScreen/>
+            </div>
+        );
+    }
 }
 
 export default Modal

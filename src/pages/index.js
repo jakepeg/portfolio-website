@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import Cards from '../components/cards';
+import {Card} from '../components/card';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/cell';
 import Header from '../components/header'
@@ -34,22 +34,27 @@ const IndexPage = ({ children, data }) => (
             keywords
           }
         }
-				allContentfulProject(sort: { fields: [createdAt], order: ASC }) {
+
+				allContentfulProject(
+          limit: 3
+          sort:{ fields: [createdAt], order: ASC }
+          ) {
           edges {
             node {
               client
               project
               role
               technology
-              link  
+              link
+              id
+              width
+              height
               poster {
                 file {
                   url
                 }
               }
               createdAt
-              width
-              height
               }
           }
         }
@@ -72,27 +77,52 @@ const IndexPage = ({ children, data }) => (
         {children}
 
 
-    <div className='hero'>
-      <div className='heroGroup'>
-        <h1>Hi, I'm Jake Kemsley</h1>
-        <p>a freelance digital <br />designer and developer <br />currently based in <br />Vaud, Switzerland</p>
-        <Link to="/page-2/">See my work</Link>
+<div className='hero'>
+<div className='heroGroup'>
+  <h1>Hi, I'm Jake Kemsley</h1>
+  <p>a freelance digital <br />designer and developer <br />currently based in <br />Vaud, Switzerland</p>
+  <Link to="/page-2/">See my work</Link>
 
 
-        <div className="Logos">
-          <img src={require('../images/logo-git.svg')} width="40" />
-          <img src={require('../images/logo-behance.svg')} width="40" />
-          <img src={require('../images/logo-codepen.svg')} width="40" />
-          <img src={require('../images/logo-linkedin.svg')} width="40" />
-          <img src={require('../images/logo-twitter.svg')} width="40" />
-          <img src={require('../images/logo-instagram.svg')} width="40" />
-        </div>
+  <div className="Logos">
+    <img src={require('../images/logo-git.svg')} width="40" />
+    <img src={require('../images/logo-behance.svg')} width="40" />
+    <img src={require('../images/logo-codepen.svg')} width="40" />
+    <img src={require('../images/logo-linkedin.svg')} width="40" />
+    <img src={require('../images/logo-twitter.svg')} width="40" />
+    <img src={require('../images/logo-instagram.svg')} width="40" />
+  </div>
 
-        <Wave />
-      </div>
-    </div>
+  <Wave />
+</div>
+</div>
 
-        <Cards data={data} />
+
+
+    <div className="Cards">
+        <h2>Display Work</h2>
+        <div className="CardGroup">
+      {data.allContentfulProject.edges.map(edge => {
+      const param = window.location.search.slice(1);
+      return <Card client={edge.node.client}
+              project={edge.node.project}
+              role={edge.node.role}
+              technology={edge.node.technology}
+              poster={edge.node.poster.file.url}
+              id={edge.node.id}
+              link={edge.node.link}
+              createdAt={edge.node.createdAt}
+              width={edge.node.width}
+              height={edge.node.height}
+              />
+      })}
+      </div></div>
+
+
+
+
+
+
 
       <h2>Tools and Skills</h2>
       <SectionCellGroup>
