@@ -8,7 +8,7 @@ import Cell from '../components/cell';
 import Header from '../components/header'
 import './index.css'
 import { Link } from 'gatsby'
-import Wave from '../components/wave';
+import Hero from '../components/hero';
 import styled from 'styled-components'
 
 const SectionCellGroup = styled.div`
@@ -77,25 +77,7 @@ const IndexPage = ({ children, data }) => (
         {children}
 
 
-<div className='hero'>
-<div className='heroGroup'>
-  <h1>Hi, I'm Jake Kemsley</h1>
-  <p>a freelance digital <br />designer and developer <br />currently based in <br />Vaud, Switzerland</p>
-  <Link to="/page-2/">See my work</Link>
-
-
-  <div className="Logos">
-    <img src={require('../images/logo-git.svg')} width="40" />
-    <img src={require('../images/logo-behance.svg')} width="40" />
-    <img src={require('../images/logo-codepen.svg')} width="40" />
-    <img src={require('../images/logo-linkedin.svg')} width="40" />
-    <img src={require('../images/logo-twitter.svg')} width="40" />
-    <img src={require('../images/logo-instagram.svg')} width="40" />
-  </div>
-
-  <Wave />
-</div>
-</div>
+  <Hero />
 
 
 
@@ -117,12 +99,6 @@ const IndexPage = ({ children, data }) => (
               />
       })}
       </div></div>
-
-
-
-
-
-
 
       <h2>Tools and Skills</h2>
       <SectionCellGroup>
