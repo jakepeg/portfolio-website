@@ -1,52 +1,44 @@
 {
     "cells": [
         {
-            "title": "Vanilla JavaScript and React framework",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "title": "HTML5 Markup",
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
             "title": "Styling in CSS, SASS, LESS",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
-            "title": "HTML5 Markup",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "title": "Vanilla JavaScript and React framework",
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
             "title": "SVG and Interaction Animation using GSAP",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
             "title": "Design Systems with Figma",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
-            "title": "Wordpress and Contentful CMS",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "title": "Wordpress and Contentful",
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
+        },
+        {
+            "title": "Bootstrap, Foundation, MaterialCSS, CSSGrid",
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
+        },
+        {
+            "title": "Sizmek, FlashTalkinng and DoubleClick (certified)",
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
             "title": "REST API, AJAX and GraphQL",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         },
         {
-            "title": "Sizmek, FlashTalkinng and DoubleClick (certified) Ad Platforms",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
-        },
-        {
-            "title": "Static Data with JSON",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
-        },
-        {
-            "title": "GraphQL with Contentful",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
-        },
-        {
-            "title": "Publish to Netlify",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
-        },
-        {
-            "title": "Payment with Stripe Checkout",
-            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+            "title": "Workflow with GIT, Gulp, WebPack",
+            "image": "http://jakekemsley.com/img/skills-icon.svg"
         }
     ]
 }

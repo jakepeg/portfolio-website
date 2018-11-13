@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Standard Banner: 160x600</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/EBLoader.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body onLoad="doAnim()">
+    <div id="ad">
+        <div id="banner">
+			  <div id="people"></div>
+              <div id="bluestripe"></div>
+              <div id="logo"></div>
+              <div id="text1"></div>
+              <div id="text2"></div>
+              <div id="text3"></div>
+              <div id="people2"></div>
+              <div id="car"></div>
+              <div id="logo2"></div>
+              <div id="cta"></div>
+              <div id="swift-gl-auto"></div>
+              <div id="price2"></div>
+              <div id="save-500"></div>
+        </div>
+    </div>
+    
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script>
+		doAnim = function() {			
+			var TL1 = new TimelineMax({repeat:2, repeatDelay:2.5});
+			TL1.set("#banner", {visibility:"visible"})
+			.to('#people', 0.5, {opacity: 0.5})
+			.from('#bluestripe', 0.5, {left: -300, top: 47, ease: Power4.easeOut}, '-=0.5')
+			.from('#logo', 0.5, {scale: 3, left: 165, top: 26, ease: Power4.easeOut})
+			.from('#text1', 0.5, {scale: 3, left: -600, top: 180, ease: Power2.easeOut})
+			.from('#text2', 0.5, {scale: 3, left: -600, top: 180,  ease: Power4.easeOut}, '-=0.3')
+			.from('#text3', 0.5, {opacity: 0, scale: 2})
+			
+			.from('#logo2', 0.5, {top: 120, ease: Power4.easeOut}, '+=0.5')
+			.from('#cta', 0.5, {top: 120, ease: Power4.easeOut}, '-=0.5')
+
+			
+
+			
+			.to('#people', 0.5, {opacity: 0}, '+=2')
+			.to('#people2', 0.5, {opacity: 1})
+			
+			.from('#car', 0.5, {scale: 0.2, left: -300, top: 47, ease: Power4.easeOut}, '-=0.5')
+			.from('#swift-gl-auto', 0.5, {scale: 3, left: 600, top: 26, ease: Power4.easeOut})
+			.from('#price2', 0.5, {scale: 3, left: 665, top: 26, ease: Power4.easeOut}, '-=0.5')
+			.from('#save-500', 0.3, {scale: 3, left: 665, top: 26, ease: Back.easeOut.config(1.2)}, '+=0.5');
+		};
+	</script>
+    
+</body>
+
+</html>

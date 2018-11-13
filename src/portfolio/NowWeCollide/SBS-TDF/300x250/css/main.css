@@ -1,0 +1,38 @@
+body{margin:0px}
+
+div{
+	position:absolute;
+    width:298px;
+    height:248px
+}
+
+#ad{
+  display:block;
+  border:#000 1px solid;
+  overflow:hidden;
+  -moz-user-select:-moz-none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+	cursor:pointer;
+	background-color: #000;
+}
+
+/*#banner{visibility:hidden}*/
+/*#bg{background-image:url(../img/bg.jpg)}*/
+#c1{background-image:url(../img/c1.png)}
+#c1b{background-image:url(../img/c1b.png)}
+#c2{background-image:url(../img/c2.png)}
+#c2b{background-image:url(../img/c2b.png)}
+#c3{background-image:url(../img/c3.png)}
+#c4{background-image:url(../img/c4.png)}
+#cta{background-image:url(../img/cta.png)}
+#shadow{background-image:url(../img/shadow.png)}
+#sprite {
+	background-image: url(../img/sprite.png);
+	width: 90px;
+	height: 59px;
+	right: 8px;
+	top: 130px;
+}

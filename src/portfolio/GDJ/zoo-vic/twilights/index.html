@@ -1,0 +1,48 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="http://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>  
+        <script type="text/javascript" src="js/animator.js"></script>
+        <script type="text/javascript" src="js/animation.js"></script>        
+</head>
+<body onLoad="startAd();"> 
+		<div id="ad">
+	       <div id="bg"></div>
+	       <div id="lineup"></div>
+           <div id="bgtop"></div>
+           <div id="zoo-twilights"></div>
+		   <div id="bandicoot"></div>
+		   <div id="k1" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+		   <div id="k2" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+		   <div id="k3" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+		   <div id="k4" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+		   <div id="k5" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+		   <div id="k6" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+		   <div id="k7" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,0.75))"></div>
+           <div id="clickdiv" style="width:100%; height:100%; display:block; position:relative; top:0; left:0; z-index:9999; cursor:pointer!important;"></div>
+
+		</div>
+        
+<script>
+var clickthrough;
+var checkInit;
+var adDiv;
+function startAd() {
+    adDiv = document.getElementById("ad");
+	var animtr = new Animator();
+	animtr.adLoopReq = 9999;
+	animtr.adLpReq = 1;
+	animtr.initAnimator();
+	animtr.startAdDisplay();
+}
+
+function bgExitHandler(e) {
+  Enabler.exit('Background Exit');
+}
+document.getElementById('clickdiv').addEventListener('click', bgExitHandler, false);
+</script>        
+</body> 
+</html>

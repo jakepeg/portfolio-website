@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Standard Banner: 300x600</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/EBLoader.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body onLoad="doAnim()">
+    <div id="ad">
+        <div id="banner">
+            <div class="button"> </div>
+            <div class="lockup"> </div>
+            <div class="copyOne"></div>
+            <div class="copyThree"></div>
+            <div class="copyFour"></div>
+            <div class="background"></div>
+            <div id="cars">
+                <div id="car_juke_1" class="car_juke"> </div>
+                <div id="car_micra_1" class="car_micra"> </div>
+                <div id="car_navara_1" class="car_navara"> </div>
+                <div id="car_pathfinder_1" class="car_pathfinder"> </div>
+                <div id="car_pulsar_1" class="car_pulsar"> </div>
+                <div id="car_qashqai_1" class="car_qashqai"> </div>
+                <div id="car_x-trail_1" class="car_x-trail"> </div>
+                <div id="car_x-trail_2" class="car_x-trail"> </div>
+                <div id="car_navara_2" class="car_navara"> </div>
+                <div id="car_pathfinder_2" class="car_pathfinder"> </div>
+                <div id="car_x-trail_3" class="car_x-trail"> </div>
+                <div id="car_qashqai_2" class="car_qashqai"> </div>
+                <div id="car_micra_2" class="car_micra"> </div>
+                <div id="car_pulsar_2" class="car_pulsar"> </div>
+                <div id="car_navara_3" class="car_navara"> </div>
+                <div id="car_micra_3" class="car_micra"> </div>
+                <div id="car_pathfinder_3" class="car_pathfinder"> </div>
+                <div id="car_x-trail_4" class="car_x-trail"> </div>
+                <div id="car_juke_2" class="car_juke"> </div>
+                <div id="car_pulsar_3" class="car_pulsar"> </div>
+                <div id="car_qashqai_3" class="car_qashqai"> </div>
+                <div id="car_navara_4" class="car_navara"> </div>
+                <div id="car_qashqai_4" class="car_qashqai"> </div>
+            </div>
+            <div id="disclaimer"> </div>
+        </div>
+    </div>
+    
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script>
+		doAnim = function() {			
+			var TL1 = new TimelineMax({repeat:1, repeatDelay:2.5});
+			TL1.set("#banner", {visibility:"visible"})
+			.to('.lockup', 0.1, {opacity:1})
+			.to('.copyOne', 0.5, {opacity: 1, ease: Power3.easeOut}, '+=0.5')
+            
+            
+            /*
+            .to('#car_qashqai_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '+=2')
+            .to('#car_navara_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_x-trail_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_pathfinder_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_juke_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_pulsar_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_x-trail_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_micra_1', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_navara_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_pathfinder_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_x-trail_3', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_qashqai_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_micra_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_pulsar_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_navara_3', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_micra_3', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_pathfinder_3', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_x-trail_4', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_juke_2', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_pulsar_3', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_qashqai_3', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_navara_4', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .to('#car_qashqai_4', 0.5, {opacity: 1, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            */
+            
+            
+            /*
+            .from('#car_qashqai_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '+=2')
+            .from('#car_navara_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_x-trail_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_pathfinder_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_juke_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_pulsar_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_x-trail_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_micra_1', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_navara_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_pathfinder_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_x-trail_3', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_qashqai_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_micra_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_pulsar_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_navara_3', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_micra_3', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_pathfinder_3', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_x-trail_4', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_juke_2', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_pulsar_3', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_qashqai_3', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_navara_4', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')
+            .from('#car_qashqai_4', 0.5, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.4')            
+            */
+            
+            .from('#car_qashqai_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '+=2')
+            .from('#car_navara_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_x-trail_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_pathfinder_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_juke_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_pulsar_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_x-trail_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_micra_1', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_navara_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_pathfinder_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_x-trail_3', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_qashqai_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_micra_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_pulsar_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_navara_3', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_micra_3', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_pathfinder_3', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_x-trail_4', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_juke_2', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_pulsar_3', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_qashqai_3', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_navara_4', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')
+            .from('#car_qashqai_4', 0.3, {scale: 0, ease: Bounce.easeOut, y: 0 }, '-=0.2')  
+            
+            .to('.copyOne', 0, {opacity: 0})
+            .to('.copyThree', 0, {opacity: 1})
+            .to('#cars', 1.0, {top: 800, ease: Power4.easeOut}, '+=2.4')
+            .to('.copyThree', 0.5, {opacity: 0, ease: Power3.easeOut}, '+=2')
+            .to('.copyFour', 0.5, {opacity: 1, ease: Power3.easeOut}, '+=0.5');
+		};
+        
+        var disclaimer = document.getElementById("disclaimer");
+        disclaimer.onmouseover = function(){
+            TweenMax.to('#disclaimer', 0.5, {bottom: 0, ease: Power3.easeOut});
+        }
+        
+        disclaimer.onmouseout = function(){
+            TweenMax.to('#disclaimer', 0.5, {bottom: -380, ease: Power3.easeOut});
+        }
+        
+	</script>
+    
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+body {margin: 0px}
+
+div {
+    position: absolute;
+    display: block;
+    width: 298px;
+    height: 248px;
+    left:0;
+	  top:0;
+}
+
+#ad {
+    border: rgb(0, 0, 0) 1px solid;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#banner {
+	visibility:hidden;
+    background-color: #FFF;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+	cursor:pointer;
+}
+
+#copy1 {background-image: url("../images/copy-1.png");z-index:1510}
+#copy2 {background-image: url("../images/copy-2.png");z-index:1509}
+#copy3 {background-image: url("../images/copy-3.png");z-index:1508}
+#copy4 {background-image: url("../images/copy-4.png");z-index:1507}
+#copy5 {background-image: url("../images/copy-5.png");z-index:1506}
+#copy6 {background-image: url("../images/copy-6.png");z-index:1505}
+#copy7 {background-image: url("../images/copy-7.png");z-index:1504}
+#copy8 {background-image: url("../images/copy-8.png");z-index:1503}
+#copy9 {background-image: url("../images/copy-9.png");z-index:1502}
+#copy10 {background-image: url("../images/copy-10.png");z-index:1501}
+#disclaimer {background-image: url("../images/disclaimer.png")}
+#t_c {background-image: url("../images/t_c.png")}
+#price {background-image: url("../images/price.png")}
+#logo {background-image: url("../images/logo.png")}
+#cta {background-image: url("../images/cta.png")}
+#hack {background-image: url("../images/hack.png")}
+
+/*
+@-moz-document url-prefix() { 
+#copy1 {background-image: url("../images/copy-1.png");z-index:1510}
+#copy2 {background-image: url("../images/copy-2.png");z-index:1509}
+#copy3 {background-image: url("../images/copy-3.png");z-index:1508}
+#copy4 {background-image: url("../images/copy-4.png");z-index:1507}
+#copy5 {background-image: url("../images/copy-5.png");z-index:1506}
+#copy6 {background-image: url("../images/copy-6.png");z-index:1505}
+#copy7 {background-image: url("../images/copy-7.png");z-index:1504}
+}
+*/
+
+/*      FLIPPER      */
+
+#clickthrough {z-index:2000}
+
+#flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.showFront {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.showBack {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.go360 {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.go540 {
+  -webkit-transform: rotateY(540deg);
+  -moz-transform: rotateY(540deg);
+  -o-transform: rotateY(540deg);
+  transform: rotateY(540deg);
+}
+
+.go720 {
+  -webkit-transform: rotateY(720deg);
+  -moz-transform: rotateY(720deg);
+  -o-transform: rotateY(720deg);
+  transform: rotateY(720deg);
+}
+
+.go900 {
+  -webkit-transform: rotateY(900deg);
+  -moz-transform: rotateY(900deg);
+  -o-transform: rotateY(900deg);
+  transform: rotateY(900deg);
+}
+
+#flipper {
+  -webkit-transition: 1.3s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-timing-function: cubic-bezier(0.270, 0.590, 0.300, 1.345);
+  -moz-transition: 1.3s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition-timing-function: cubic-bezier(0.270, 0.590, 0.300, 1.345);
+  -o-transition: 1.3s;
+  -o-transform-style: preserve-3d;
+  -o-transition-timing-function: cubic-bezier(0.270, 0.590, 0.300, 1.345);
+  transition: 1.3s;
+  transform-style: preserve-3d;
+  transition-timing-function: cubic-bezier(0.270, 0.590, 0.300, 1.345);
+  position: relative!important;
+}
+
+.front, .back {
+  background-image: url("../images/flipper-bg.png");
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+   /* for firefox 31 */
+  transform: rotateY(0deg)
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,314 @@
+/* Resets ------ */ 
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; } article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; } a img {border: 0; background-color: transparent; background-repeat: no-repeat; background-size: auto auto; } 
+
+@font-face {
+		font-family: 'mazdaBold';
+		src: url('../fonts/Mazda-Bold.woff2') format('woff2'),
+		 url('../fonts/Mazda-Bold.woff') format('woff'),
+		 url('../fonts/Mazda-Bold.ttf') format('truetype');
+}
+
+@font-face {
+		font-family: 'mazdaRegular';
+		src: url('../fonts/Mazda-Regular.woff2') format('woff2'),
+		 url('../fonts/Mazda-Regular.woff') format('woff'),
+		 url('../fonts/Mazda-Regular.ttf') format('truetype');
+	}
+
+@font-face {
+		font-family: 'Interstate';
+		src: url('../fonts/Interstate-Regular.woff2') format('woff2'),
+		 url('../fonts/Interstate-Regular.woff') format('woff'),
+		 url('../fonts/Interstate-Regular.ttf') format('truetype');
+	}
+	
+body { 
+	background-color: rgba(0, 0, 0, 0.7);
+	margin:0px;
+	font-family:'mazdaRegular', Helvetica, Arial, sans-serif;
+}
+
+div {
+	position: absolute; 
+}
+
+#myAd {
+
+	position: absolute; 
+	width: 100%; 
+	top: 50%;
+	left: 0px;
+	text-align: center;	
+	z-index: 10;
+} 
+
+body {
+  margin:0px;
+  background:#EEEEEE;
+}
+
+#container {
+  display: block;
+  width: 970px;
+  height: 250px;
+}
+
+#ad {
+   position: relative;
+   display: block;
+   left:0px;
+   border: rgb(0,0,0) 1px solid;
+   overflow:hidden;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+	width: 970px;
+	height: 250px;
+	background-image: url('../images/bgnd.jpg');
+	cursor: pointer;
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+}
+
+.disclaimer_button {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}
+
+#userActionButton { 
+	z-index: 9999999;
+}
+
+#clickThroughButton { 
+	z-index: 9999999;
+}
+
+#content {
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+	margin: 0px auto;
+	display:none;
+	overflow: hidden;
+		margin-top: -178px;
+		height: 248px; 
+		width: 968px;
+}
+
+#scrollBlocker {
+	top:0px;
+	left:0px;
+	min-height:100%;
+	min-width:100%;
+	background-color: red;
+	z-index: 1;
+}
+
+.label {
+	left: 10px;
+	top: 65px;
+}
+
+button {
+	background-color: #0068FF;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	height: 30px;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	width: 108px;
+	user-select: none;
+}
+
+button:hover, button:active {
+	color: #FAF000;
+}
+
+button:active {
+	font-size: 11px;
+}
+
+#banner .buttons {
+}
+#expansion .buttons {
+}
+.button {
+  position: relative;
+  background-color:white;
+  background-repeat:no-repeat;
+  cursor:pointer;
+}
+.button.expand {
+    background: none repeat scroll 0 0 rgb(0, 0, 0);
+    bottom: 0;
+    height: 3px;
+    opacity: 0;
+    right: 0;
+    width: 3px;
+}
+.button.clickthrough {
+  width:121px;
+  height:36px;
+  background:url("../images/clickthrough_button.png");
+  background-size:121px 36px;
+  bottom: 7px;
+  right: 10px;
+}
+.button.clickthrough:hover {
+  bottom: 6px;
+  right: 9px;
+}
+#collapsdeButton {
+  width:300px;
+  height:50px;
+  background:none;
+  opacity:0;
+}
+
+.button.useraction {
+    background: transparent url("../images/btn_bg.png") repeat scroll 0px 0px;
+    height: 34px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+}
+
+
+
+#btn_disc {
+    background: transparent url("../images/btn_d.png") no-repeat scroll 0px 0px;
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 24px;
+    vertical-align: top;
+    margin-left: -24px;
+}
+
+#CTA_button_label {
+	 background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 300;
+    height: 34px;
+    padding: 7px 4px 0px 7px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+#CTA_button_arrow {
+    position: relative;
+    margin: 0px;
+    padding: 9px 0px 0px 2px;
+    font-weight: 300;
+    font-family: arial;
+    color: #FFF;
+    font-size: 11px;
+    white-space: nowrap;
+    text-align: left;
+    display: inline-block;
+    width: 37px;
+    height: 23px;
+    background: transparent url("../images/btn3.png") no-repeat scroll 0px 0px;}
+
+.button.useraction:hover{
+    left: 1px;
+    top: 1px !important;
+}
+.button.close{
+  right:1px;
+  top:1px;
+  width:32px;
+  height: 32px;
+  background: url("../images/close_btn.png") no-repeat rgba(0,0,0,0);
+  background-repeat:no-repeat;
+}
+
+#desc {
+	left: 155px;
+	top:49px;
+	color:#0d2a4d;
+	font-size: 12px;
+	font-weight: 400;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+#dco_image {
+	display: block;
+	width: 728px;
+	top: 85px;
+	text-align: center;
+	
+}
+
+#dco_text {
+	display: block;
+	width: 728px;
+	top: 205px;
+	text-align: center;
+	font-size: 10px;
+	
+}
+
+#disc_div{
+	width:155px;
+	left:785px;
+	top:55px;
+	height:170px;
+	background:rgba(0,0,0,0.8);
+	border:1px solid rgba(255,255,255,0.3);
+	position:absolute;
+	display:block;
+	z-index:9999;	
+	padding:5px 5px;
+	color:#ffffff;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	visibility:hidden;
+}
+
+.featTxt{
+	margin:1px 0; 
+	font-family:Interstate; 
+	color:#0071C6;
+	font-size:26px;
+	position:relative; 
+	white-space: nowrap; 
+	width:135px; 
+	z-index:500; 
+	display:block;
+}
+
+#red_model_text {
+    padding: 1px 38px;
+    font-family: mazdaBold;
+    color: #FFF;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    background: transparent url("../images/swoosh.png") no-repeat scroll -29% 107%;
+}
+
+#zoom {margin-top:-7px;}

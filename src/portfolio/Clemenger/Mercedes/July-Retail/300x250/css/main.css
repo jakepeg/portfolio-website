@@ -1,0 +1,34 @@
+body{margin:0px}
+
+div{
+	position:absolute;
+    width:298px;
+    height:248px
+}
+
+#ad{
+    display:block;
+    border:rgb(116, 118, 115) 1px solid;
+    overflow:hidden;
+    -moz-user-select:-moz-none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+	cursor:pointer;
+	background-color:#000
+}
+
+#banner{visibility:hidden}
+#hero{
+	background-image:url(../imgs/hero.jpg);
+    width:595px;
+    height:338px
+}
+#logo{background-image:url(../imgs/logo.png)}
+#logotype{background-image:url(../imgs/logotype.png)}
+#mask{background-image:url(../imgs/mask.png)}
+#copy1{background-image:url(../imgs/copy1.png)}
+#copy2{background-image:url(../imgs/copy2.png)}
+#copy3{background-image:url(../imgs/copy3.png)}
+#cta{background-image:url(../imgs/cta.png)}

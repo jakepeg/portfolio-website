@@ -1,0 +1,316 @@
+/* Resets ------ */ 
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; } article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; } a img {border: 0; background-color: transparent; background-repeat: no-repeat; background-size: auto auto; } 
+
+
+body { 
+	background-color: rgba(0, 0, 0, 0.7);
+	margin:0px;
+	font-family:'mazdaRegular', Helvetica, Arial, sans-serif;
+}
+
+div {
+	position: absolute; 
+}
+
+#myAd{
+
+	position: absolute; 
+	width: 100%; 
+	top: 50%;
+	left: 0px;
+	text-align: center;	
+	z-index: 10;
+} 
+
+.buttons {
+	position: absolute;
+	bottom: -40px;
+	right: 27px;
+}
+
+#userActionButton { 
+	z-index: 9999999;
+}
+
+#clickThroughButton { 
+	z-index: 9999999;
+}
+
+
+#date_Str{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    display: block;
+    font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 40px;
+    min-width: 110px;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+	color:#284790;
+	text-align:center;
+}
+#geom_l{
+	width:100px;
+	height: 32px;
+	background:url('../images/geom_bl.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0); 
+	display:inline-block;
+	position:static;
+	vertical-align:top;
+}
+#geom_r{
+	width:100px;
+	height: 32px;
+	background:url('../images/geom_br.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0); 
+	display:inline-block;
+	position:static;
+	vertical-align:top;
+}
+
+#content{
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+	margin: 0px auto;
+	display:none;
+	overflow: hidden;
+		margin-top: -178px;
+		height: 398px; 
+		width: 298px;
+}
+
+#scrollBlocker{
+	top:0px;
+	left:0px;
+	min-height:100%;
+	min-width:100%;
+	background-color: red;
+	z-index: 1;
+}
+
+.label {
+	left: 10px;
+	top: 65px;
+}
+
+button {
+	background-color: #0068FF;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	height: 30px;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	width: 108px;
+	user-select: none;
+}
+
+button:hover, button:active {
+	color: #FAF000;
+}
+
+button:active {
+	font-size: 11px;
+}
+
+
+body{
+  margin:0px;
+  background:#EEEEEE;
+}
+#container{
+  display: block;
+  width: 300px;
+  height: 400px;
+  
+}
+#defaultImg{
+   position: absolute;
+	display: none;
+	left:0px;
+	width: 970px;
+	height: 250px;
+	background-image: url('../images/default.jpg');
+}
+#ad{
+   border: rgb(0,0,0) 1px solid;
+   overflow:hidden;
+   position: relative;
+	display: block;
+	left:0px;
+	width: 968px;
+	height: 248px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+
+.button{
+  position: relative;
+  background-color:white;
+  background-repeat:no-repeat;
+  cursor:pointer;
+}
+.button.expand{
+    background: none repeat scroll 0 0 rgb(0, 0, 0);
+    bottom: 0;
+    height: 3px;
+    opacity: 0;
+    right: 0;
+    width: 3px;
+}
+.button.clickthrough{
+  width:121px;
+  height:36px;
+  background:url("../images/clickthrough_button.png");
+  background-size:121px 36px;
+  bottom: 7px;
+  right: 10px;
+}
+.button.clickthrough:hover{
+  bottom: 6px;
+  right: 9px;
+}
+#collapsdeButton{
+  width:300px;
+  height:50px;
+  background:none;
+  opacity:0;
+}
+
+
+.button.useraction{
+	background: url("../images/btn_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 32px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+}
+
+#btn_disc{
+	background: url("../images/btn_d.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 24px;
+	vertical-align:top;
+	margin-left: -24px;
+}
+
+#CTA_button_label{
+	 background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: 300;
+    height: 31px;
+    padding: 8px 3px 0 8px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+#CTA_button_arrow{
+	position:relative; 
+	margin:0; 
+	padding:9px 0 0 2px; 
+	font-weight:300; 
+	font-family:arial; 
+	color:#ffffff;
+	font-size: 11px; 
+	white-space: nowrap; 
+	text-align:left; 
+	display:inline-block;
+	width:27px;
+	height:31px;
+	background: url("../images/btn3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+
+.button.useraction:hover{
+    left: 1px;
+    top: 1px !important;
+}
+.button.close{
+  right:1px;
+  top:1px;
+  width:32px;
+  height: 32px;
+  background: url("../images/close_btn.png") no-repeat rgba(0,0,0,0);
+  background-repeat:no-repeat;
+}
+
+
+
+
+
+#desc {
+	left: 155px;
+	top:49px;
+	color:#0d2a4d;
+	font-size: 12px;
+	font-weight: 400;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+#dco_image {
+	display: block;
+	width: 300px;
+	top: 85px;
+	text-align: center;
+	
+}
+
+#dco_text {
+	display: block;
+	width: 300px;
+	top: 205px;
+	text-align: center;
+	font-size: 10px;
+	
+}
+
+#disc_div{
+	width:547px;
+	left:8px;
+	top:8px;
+	height:34px;
+	background:rgba(0,0,0,0.8);
+	border:1px solid rgba(255,255,255,0.3);
+	position:absolute;
+	display:block;
+	z-index:9999;	
+	padding:20px 15px;
+	color:#ffffff;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	visibility:hidden;
+}
+
+.featTxt{
+	color: #ff9900;
+    display: block;
+    font-family: MazdaBold;
+    font-size: 22px;
+    margin: 1px 0;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 500;
+}

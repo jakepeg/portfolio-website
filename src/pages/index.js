@@ -7,7 +7,6 @@ import staticdata from '../../staticdata.json'
 import Cell from '../components/cell';
 import Header from '../components/header'
 import './index.css'
-import { Link } from 'gatsby'
 import Hero from '../components/hero';
 import styled from 'styled-components'
 
@@ -36,7 +35,7 @@ const IndexPage = ({ children, data }) => (
         }
 
 				allContentfulProject(
-          limit: 3
+          limit: 30
           sort:{ fields: [createdAt], order: ASC }
           ) {
           edges {

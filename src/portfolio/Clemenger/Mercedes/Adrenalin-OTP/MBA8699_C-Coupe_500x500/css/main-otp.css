@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#clm-banner {
+    background: #000000;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    cursor: pointer;
+
+
+    /* These make sure the user can't select the banner content */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    opacity: 0;
+
+}
+
+
+/* Banner Size defined here */
+.clm-container, #clm-banner, #clm-border {
+    width: 500px;
+    height: 500px;
+}
+
+.hero-container {
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.clm-container, #clm-border, .hero, #eye, #hero, #highlight {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#pupil {
+    position: absolute;
+    left: 0px;
+    top: -37px;
+    transform: scaleX(0.35) scaleY(0.35);
+}
+
+.hero, .hero-container, .image-container  {
+    width: 500px;
+    height: 257px;
+}
+
+#logo-text, #cta, #text01, #text02, #text03, #hero {
+    opacity: 0;
+}
+
+
+.hero-container, .clm-container, #clm-banner-content {
+    overflow: hidden;
+}
+
+#clm-border {
+    border: 1px solid #000000;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#cta {
+    background: #02A0D7;
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+    inset 0 1px 1px rgba(255,255,255,0.5); /*top internal highlight*/
+    width: 122px;
+    height: 32px;
+    position: absolute;
+    left: 37px;
+    top: 377px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#cta:hover {
+    background: #3ca7d9;
+}
+
+#close {
+	position:absolute;
+    top: 0;
+    left:450px;
+    z-index:900;
+	cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="ad.size" content="width=300,height=250">
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+        <script src="js/Enabler.js" type="text/javascript"></script>
+        <script src="js/tweenmax.js"></script>
+        <!-- <script src="js/TweenMax.min.js"></script> -->
+   		  <script type="application/javascript" src="js/main2.js"></script>
+    </head>
+    <body onLoad="checkInit()">
+        <div id="ad">
+            <div id="banner">
+                 <div id="bg"><img src="img/bg.jpg" width="300" height="250"></div>
+                 <div id="c1"></div>
+                 <div id="c1b"></div>
+                 <div id="c2"></div>
+                 <div id="c2b"></div>
+                 <div id="c3"></div>
+                 <div id="c4"></div>
+                 <div id="shadow"></div>
+                 <div id="sprite"></div>
+                 <div id="cta"></div>
+            </div>
+        </div>
+		  <script>
+  			function checkInit() {
+  				startAnimation();
+  			}
+        function bgExitHandler(e) {
+          	Enabler.exit('HTML5_Background_Clickthrough');
+        }
+        document.getElementById('ad').addEventListener('click', bgExitHandler, false);
+      </script>
+    </body>
+</html>

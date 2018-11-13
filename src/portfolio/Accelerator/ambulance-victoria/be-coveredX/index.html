@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script>
+  
+  var clickTag = "https://www.google.com";
+  
+  // If true, start function. If false, listen for INIT.
+  window.onload = function() {
+    if (Enabler.isInitialized()) {
+        enablerInitHandler();
+    } else {
+        Enabler.addEventListener(studio.events.StudioEvent.INIT,
+  enablerInitHandler);
+    }
+  }
+
+  function enablerInitHandler() {
+    if (Enabler.isPageLoaded()) {
+      pageLoadedHandler();
+    } else {
+      Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED,
+      pageLoadedHandler);
+    }
+  }
+
+  function pageLoadedHandler() {
+    if (Enabler.isVisible()) {
+      adVisibilityHandler();
+    } else {
+      Enabler.addEventListener(studio.events.StudioEvent.VISIBLE,
+      adVisibilityHandler);
+    }
+  }  
+
+  function adVisibilityHandler() {
+    document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);    
+    startEdge();
+  }  
+
+  function bgExitHandler(e) {
+      Enabler.exit('main_exit');
+  }
+
+  </script>
+<!--Adobe Edge Runtime-->
+<script type="text/javascript" charset="utf-8" src="https://www.hotelgym.net/edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+	
+	
+	
+@font-face {
+    font-family: 'mary';
+    src: url('https://www.hotelgym.net/fonts/mary.eot');
+    src: url('https://www.hotelgym.net/fonts/mary.eot?#iefix') format('embedded-opentype'),
+         url('https://www.hotelgym.net/fonts/mary.woff2') format('woff2'),
+         url('https://www.hotelgym.net/fonts/mary.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'din-medium';
+    src: url('https://www.hotelgym.net/fonts/din-medium-webfont.eot');
+    src: url('https://www.hotelgym.net/fonts/din-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.hotelgym.net/fonts/din-medium-webfont.woff2') format('woff2'),
+         url('https://www.hotelgym.net/fonts/din-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'din-bold';
+    src: url('https://www.hotelgym.net/fonts/din-bold-webfont.eot');
+    src: url('https://www.hotelgym.net/fonts/din-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.hotelgym.net/fonts/din-bold-webfont.woff2') format('woff2'),
+         url('https://www.hotelgym.net/fonts/din-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'din-light';
+    src: url('https://www.hotelgym.net/fonts/din-light-webfont.eot');
+    src: url('https://www.hotelgym.net/fonts/din-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.hotelgym.net/fonts/din-light-webfont.woff2') format('woff2'),
+         url('https://www.hotelgym.net/fonts/din-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        .edgeLoad-AMB-VICTORIA { visibility:hidden; }
+        #bg-exit {
+          background-color: rgba(255,255,255,0);
+          position: absolute;
+          cursor: pointer;
+          left: 0px;
+          top: 0px;
+          width: 300px;
+          height: 250px;
+        }        
+    </style>
+<script>
+  function startEdge(){
+ //    AdobeEdge.loadComposition('angus_mrec', 'AMB-VICTORIA', {
+      AdobeEdge.loadComposition('mrec', 'AMB-VICTORIA', {
+      scaleToFit: "none",
+      centerStage: "none",
+      minW: "0px",
+      maxW: "undefined",
+      width: "300px",
+      height: "250px"
+    }, {"dom":{}}, {"dom":{}});
+  }
+</script>
+<!--Adobe Edge Runtime End-->
+</head>
+<body style="margin:0;padding:0;">
+  <div id="Stage" class="AMB-VICTORIA">
+  </div>
+  <div id="bg-exit"></div>
+
+</body>
+</html>

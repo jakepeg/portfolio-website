@@ -21,16 +21,6 @@ const Cards = ({data, children}) => (
                     </div>
 
                     <Modal />
-
-                        {/* <Iframe url={edge.node.link}
-                            width={edge.node.width}
-                            height={edge.node.height}
-                            id="myId"
-                            className="myClassname"
-                            display="initial"
-                            position="relative"
-                            allowFullScreen/> */}
-
                 </div>
             ))}
         </div>

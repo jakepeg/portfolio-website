@@ -1,0 +1,90 @@
+/* DEFAULTS*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    display: inline-block;
+}
+
+#stage {
+    width: 300px;
+    height: 600px;
+    position: relative;
+    background: #00b1eb;
+    border: 1px solid black;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#stage > * {
+    position: absolute;
+}
+
+/* END DEFAULTS */
+
+.cta {
+    bottom: 0;
+}
+
+.container {
+  width: 300px;
+  height: 600px;
+  top: 0;
+  background: #1f1f1f;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 1800px;
+}
+
+.item {
+  width: 300px;
+  height: 600px;
+  display: inline-block;
+}
+
+.one {
+  background: url("../img/fr1.jpg");
+}
+
+.two {
+  background: url("../img/fr2.jpg");
+}
+
+.three {
+  background: url("../img/fr3.jpg");
+}
+
+.four {
+  background: url("../img/fr4.jpg");
+}
+
+.five {
+  background: url("../img/fr5.jpg");
+}
+
+.controls {
+  width: 25px;
+  height: 25px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 15px;
+  position: absolute;
+}
+
+#next {
+    right: 0px;
+    top: 352px;
+}
+
+#prev {
+    left: 210px;
+    top: 352px;
+}

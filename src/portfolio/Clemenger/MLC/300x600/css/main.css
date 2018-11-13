@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+}
+
+div {
+	position: absolute;
+	user-select: none;
+}
+
+#ad {
+	position: absolute;
+    display: block;
+    width: 298px;
+    height: 598px;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#banner {
+	position: absolute;
+    display: block;
+    width: 298px;
+    height: 598px;
+	visibility:hidden;
+    background-color: #FFF;
+	cursor:pointer;
+}
+
+#bg {
+    left:0px;
+	background-image:url(../imgs/bg.jpg);
+    width: 298px;
+    height: 598px;
+    z-index:0;
+}
+
+#logo {
+    left:0px;
+	background-image:url(../imgs/logo.png);
+    width: 298px;
+    height: 598px;
+}
+
+#cta{
+    position: absolute;
+    top: 400px;
+    left: 48px;
+    width: 200px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    background-image: url(../imgs/cta.png);
+	z-index: 250;
+	cursor:pointer;
+	transition: background-color 0.5s ease;
+}
+
+#cta:hover{
+
+    background-color: #ffffff;
+    background-image: url(../imgs/cta-hover.png);
+}
+
+#copy1 {
+	background-image:url(../imgs/copy1.png);
+    width: 298px;
+    height: 598px;
+}
+
+#copy2 {
+	background-image:url(../imgs/copy2.png);
+    width: 298px;
+    height: 598px;
+}
+
+#stars-in {
+	background-image:url(../imgs/stars-in.png);
+    width: 298px;
+    height: 598px;
+	top:0;
+	left:0;
+}
+
+#stars-out {
+	background-image:url(../imgs/stars-out.png);
+    width: 298px;
+    height: 598px;
+	top:0;
+	left:0;
+}
+
+#icons {
+    width: 300px;
+    height: 200px;
+    top: 260px;
+    overflow: hidden;
+    left:0;
+}
+
+#iconstrip {
+	background-image:url(../imgs/iconstrip.png);
+    width: 300px;
+    height: 800px;
+}
+
+#labels {
+    width: 298px;
+    height: 50px;
+    top: 470px;
+    overflow: hidden;
+    left:0;
+}
+
+#labelstrip {
+	background-image:url(../imgs/labelstrip.png);
+    width: 298px;
+    height: 200px;
+}
+
+#disclaimer {
+	width: 278px;
+    height: 501px;
+    top: 79px;
+    padding: 10px;
+	background-color:#473f3a;
+	color:#fff;
+	font-family: san-serif;
+	font-size:14px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	visibility:hidden;	
+	z-index: 251;
+}
+
+#disclaimer_button {
+	background-image:url(../imgs/disclaimer_button.png);
+    width: 300px;
+    height: 20px;
+	top: 580px;
+	z-index: 252;
+}

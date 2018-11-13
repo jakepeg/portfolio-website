@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/rangeSlider.css" />
+</head>
+<body onLoad="">
+    <div id="banner">
+<div id="savings"><output></output></div>
+        <input id="range_slider" />   
+        
+    <div id="clickthrough" style="width:100%;height:50px;margin-top:90px"></div>
+           
+    </div>
+   	<script src="js/jquery.js"></script>
+    <script src="js/rangeSlider.js"></script>
+    <script>
+        $("#range_slider").ionRangeSlider({
+            type: "single",
+            grid: false,
+            from: 1,
+            to: 3,
+            to_fixed : true,
+          
+			values: ["$530","$706","$1403", ]
+        });
+    </script>
+</body>
+</html>

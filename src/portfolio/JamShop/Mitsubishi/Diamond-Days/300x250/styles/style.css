@@ -1,0 +1,156 @@
+body {
+    margin: 0px;
+}
+
+div {
+    position: absolute;
+    display: block;
+    width: 298px;
+    height: 248px;
+    left:0;
+	top:0;
+}
+
+#ad {
+    border: rgb(0, 0, 0) 1px solid;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#banner {
+	visibility:hidden;
+    background-color: #FFF;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+	cursor:pointer;
+}
+
+@-webkit-@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 200% 0; }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 200% 0; }
+}
+
+
+
+#diamond-bg {
+	right: 0px;
+	background-image:url(../images/diamond-bg.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	@-webkit-animation: animatedBackground 20s linear infinite;
+	animation: animatedBackground 20s linear infinite;
+	width:300px!important;
+}
+
+#copy1 {background-image: url("../images/copy-1.png")}
+#copy2 {background-image: url("../images/copy-2.png")}
+#copy3 {background-image: url("../images/copy-3.png")}
+#copy4 {background-image: url("../images/copy-4.png")}
+#copy5 {background-image: url("../images/copy-5.png")}
+#copy6 {background-image: url("../images/copy-6.png")}
+#diamond-bl {background-image: url("../images/diamond-bl.png")}
+#diamond-br1 {background-image: url("../images/diamond-br1.png")}
+#diamond-br2 {background-image: url("../images/diamond-br2.png")}
+#diamond-tl {background-image: url("../images/diamond-tl.png")}
+#diamond-tr {background-image: url("../images/diamond-tr.png")}
+#plus {background-image: url("../images/plus.png")}
+
+#disclaimer-button {
+	background-image: url("../images/disclaimer-button.png");
+	width:88px!important;
+	height:7px!important;
+	margin:5px;
+	z-index:10000;
+	cursor:pointer;
+}
+
+#disclaimer {
+	background-color: rgba(0, 0, 0, 0.9);
+	visibility:hidden;
+	color:#ccc;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:11px;
+	padding:20px 5px;
+	width: 288px!important;
+    height: 228px!important;
+}
+
+#disclaimer_text { margin-top:18px;	overflow:scroll; height:260px!important;z-index:2002}
+
+/*      FLIPPER      */
+
+#clickthrough {z-index:2000}
+
+#flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.showWhite {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.showBlack {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+#flip-container,
+.front,
+.back {
+  width: 298px;
+  height: 248px;
+}
+
+#flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative!important;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+/*  position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+.front {
+  z-index: 2;
+  background-image: url("../images/diamond-black.png");
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-image: url("../images/diamond-white.png");
+}

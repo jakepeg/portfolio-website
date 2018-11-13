@@ -1,0 +1,66 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; } article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; } a img {border: 0; background-color: transparent; background-repeat: no-repeat; background-size: auto auto; } 
+
+body { 
+	background-color: rgba(0, 0, 0, 0.7);
+	margin:0px;
+}
+
+div {
+	position: absolute; 
+}
+
+#ad{
+   border: rgb(0,0,0) 1px solid;
+   overflow:hidden;
+   position: relative;
+	display: block;
+	left:0px;
+	overflow:hidden;
+	width: 298px;
+	height: 598px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+
+#gradient-down {
+background: rgba(250,247,238,1);
+background: -moz-linear-gradient(top, rgba(250,247,238,1) 0%, rgba(250,247,238,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,247,238,1)), color-stop(100%, rgba(250,247,238,0)));
+background: -webkit-linear-gradient(top, rgba(250,247,238,1) 0%, rgba(250,247,238,0) 100%);
+background: -o-linear-gradient(top, rgba(250,247,238,1) 0%, rgba(250,247,238,0) 100%);
+background: -ms-linear-gradient(top, rgba(250,247,238,1) 0%, rgba(250,247,238,0) 100%);
+background: linear-gradient(to bottom, rgba(250,247,238,1) 0%, rgba(250,247,238,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf7ee', endColorstr='#e73827', GradientType=0 );
+}
+
+#gradient-up1 {
+background: rgba(220,209,177,0);
+background: -moz-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(220,209,177,0)), color-stop(93%, rgba(220,209,177,1)), color-stop(94%, rgba(220,209,177,1)), color-stop(100%, rgba(220,209,177,1)));
+background: -webkit-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: -o-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: -ms-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: linear-gradient(to bottom, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcd1b1', endColorstr='#dcd1b1', GradientType=0 );
+}
+
+#gradient-up2 {
+background: rgba(220,209,177,0);
+background: -moz-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(220,209,177,0)), color-stop(93%, rgba(220,209,177,1)), color-stop(94%, rgba(220,209,177,1)), color-stop(100%, rgba(220,209,177,1)));
+background: -webkit-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: -o-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: -ms-linear-gradient(top, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+background: linear-gradient(to bottom, rgba(220,209,177,0) 0%, rgba(220,209,177,1) 93%, rgba(220,209,177,1) 94%, rgba(220,209,177,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcd1b1', endColorstr='#dcd1b1', GradientType=0 );
+}
+
+#buy-button {cursor:pointer}
+#view-button {cursor:pointer}
+
