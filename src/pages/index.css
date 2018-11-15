@@ -20,6 +20,8 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   justify-items: center;
+  height: auto;
+  overflow: hidden;
 }
 
 @media (max-width: 1060px) {
@@ -49,4 +51,31 @@ h2 {
   .CardGroup h2 {
     font-size: 30px;
   }
+}
+
+/* PORTFOLIO FILTER LINKS */
+
+.current-filter {
+	border-top: #000 1px solid!important;
+}
+
+.filter a{
+	padding: 10px 20px;
+	display:inline-block;
+	color:#003;
+	text-decoration:none;
+	transition:all 0.2s;
+	border-bottom: #fff 1px solid;
+	border-top: #fff 1px solid;
+}
+.filter a:hover{
+	border-bottom: #000 1px solid;
+	transition:all 0.2s;
+}
+.filter a:active{
+	background:#999
+}
+.filter{
+	margin: 28px 0 10px 0;
+	text-align:center
 }

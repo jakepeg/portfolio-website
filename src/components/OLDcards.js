@@ -10,7 +10,7 @@ const Cards = ({data, children}) => (
         <div className="CardGroup">
             {data.allContentfulProject.edges.map(edge => (
                 <div>
-                    <div className="Card">
+                    <div className={'Card' + edge.node.type}>
                         <img src={'https:' + edge.node.poster.file.url} />
                         <div className="Card-info">
                             <p><span className="Card-label">Client</span><br />{edge.node.client}</p>

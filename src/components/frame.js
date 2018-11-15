@@ -10,8 +10,6 @@ export default ( props ) => (
         <Iframe url={props.link}
           width={props.width}
           height={props.height}
-          id="myId"
-          className="myClassname"
           display="initial"
           position="relative"
           allowFullScreen/>

@@ -30,7 +30,7 @@ class Card extends React.Component{
             />}
 
                 <Overdrive key={this.props.id} id={this.props.id.toString()} animationDelay={1} style={{display: 'inline-block'}}>
-                    <div className="Card" onClick={(e) => this.showPhoto(e, this.props.id)}>
+                    <div className={'Card ' + this.props.projecttype} onClick={(e) => this.showPhoto(e, this.props.id)}>
                         <img src={'https:' + this.props.poster} />
                         <div className="Card-info">
                             <p><span className="Card-label">Client</span><br />{this.props.client}</p>
