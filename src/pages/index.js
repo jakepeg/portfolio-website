@@ -11,7 +11,8 @@ import Hero from '../components/hero'
 // import Filter from '../components/filter'
 import Footer from '../components/footer'
 import styled from 'styled-components'
-import Wave from '../components/wave';
+import Wave from '../components/wave'
+import CardWebsite from '../components/cardwebsite'
 
 const SectionCellGroup = styled.div`
   max-width: 1160px;
@@ -82,14 +83,33 @@ const IndexPage = ({ children, data }) => (
 
   <Hero />
   <div id="work"> <br /> </div>
+
+ 
+
+  
     <div className="Cards">
         <h2>Selected Works</h2>
 
         {/* <Filter /> */}
 
         <div className="CardGroup">
+
+
+      <CardWebsite 
+          poster="//www.digz.com.au/portfolio//WorkingParty/Aussie/poster.jpg" 
+          client="WorkingParty Melbourne"
+          project="Aussie Website Redesign"
+          role="Frontend Developer"
+          technology="HTML5, CSS3, BEM, LESS, JS, GIT, Gulp"
+          link="https://www.aussie.com.au/"
+        />
+
+
+
+
       {data.allContentfulProject.edges.map(edge => {
-      const param = window.location.search.slice(1);
+      //const windowGlobal = typeof window !== 'undefined' && window
+      //const param = windowGlobal.location.search.slice(1);
       return <Card client={edge.node.client}
               project={edge.node.project}
               role={edge.node.role}
@@ -103,7 +123,9 @@ const IndexPage = ({ children, data }) => (
               height={edge.node.height}
               />
       })}
-      </div></div>
+
+      </div>
+      </div>
       <div id="skills"> <br /> </div>
       <h2>Tools and Skills</h2>
       <SectionCellGroup>

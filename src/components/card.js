@@ -12,12 +12,14 @@ class Card extends React.Component{
     
       showPhoto (e, id) {
         e.preventDefault()
-        // Router.push(`/?photoId=${id}`, `/photo?id=${id}`)
         navigate(`/?${id}` , `/page-2/?${id}`);
     }
 
-    render(){
-        const urlID = window.location.search.slice(1);
+    render(){ 
+        const windowGlobal = typeof window !== 'undefined' && window;
+        //const urlID = windowGlobal.location.search.slice(1);
+        const urlID = windowGlobal.location;
+        console.log(urlID);
         return(
         <div>    
             {urlID && <Modal

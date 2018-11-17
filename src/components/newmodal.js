@@ -14,7 +14,9 @@ export default class extends React.Component {
   }
 
   render () {
-    if(this.props.id === window.location.search.slice(1)){
+    //if(this.props.id === this.props.id){
+    const windowGlobal = typeof window !== 'undefined' && window
+    if(this.props.id === windowGlobal.location.search.slice(1)){
       return (
         <div ref={el => (this._shim = el)} className='shim' onClick={(e) => this.dismiss(e)}>
           <div ref={el => (this._photoWrap = el)} className='photo'>
