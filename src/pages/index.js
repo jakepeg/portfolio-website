@@ -112,7 +112,7 @@ const IndexPage = ({ children, data }) => (
           poster="//www.digz.com.au/portfolio/hardwire/esssuper/poster.jpg" 
           client="Hardwire Melbourne"
           project="ESS Super Interactive SVG"
-          role="Frontend Developer"
+          role="Developer / Animator"
           technology="SVG, JS, GSAP, ScrollMagic"
           link="https://www.esssuper.com.au/investments/investment-approach/investment-approach-tool"
         />
