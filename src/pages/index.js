@@ -37,7 +37,6 @@ const IndexPage = ({ children, data }) => (
         }
 
 				allContentfulProject(
-          limit: 30
           sort:{ fields: [createdAt], order: ASC }
           ) {
           edges {
