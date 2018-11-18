@@ -164,7 +164,7 @@ const IndexPage = ({ children, data }) => (
       </div>
       </div>
       <div id="skills"> <br /> </div>
-      <h2>Tools and Skills</h2>
+      <h2>Skills</h2>
       <SectionCellGroup>
         {staticdata.cells.map(cell => (
           <Cell title={cell.title} image={cell.image} />
