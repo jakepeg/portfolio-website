@@ -8,10 +8,8 @@ import Cell from '../components/cell'
 import Header from '../components/header'
 import './index.css'
 import Hero from '../components/hero'
-// import Filter from '../components/filter'
 import Footer from '../components/footer'
 import styled from 'styled-components'
-import Wave from '../components/wave'
 import CardWebsite from '../components/cardwebsite'
 
 const SectionCellGroup = styled.div`
@@ -84,9 +82,7 @@ const IndexPage = ({ children, data }) => (
   <Hero />
   <div id="work"> <br /> </div>
 
- 
 
-  
     <div className="Cards">
         <h2>Selected Works</h2>
 
@@ -96,7 +92,7 @@ const IndexPage = ({ children, data }) => (
 
 
       <CardWebsite 
-          poster="//www.digz.com.au/portfolio//WorkingParty/Aussie/poster.jpg" 
+          poster="//www.digz.com.au/portfolio/WorkingParty/Aussie/poster.jpg" 
           client="WorkingParty Melbourne"
           project="Aussie Website Redesign"
           role="Frontend Developer"
@@ -104,9 +100,51 @@ const IndexPage = ({ children, data }) => (
           link="https://www.aussie.com.au/"
         />
 
+      <CardWebsite 
+          poster="//www.digz.com.au/portfolio/Clemenger/NAB/creditcards/poster.jpg" 
+          client="Clemenger BBDO Melbourne"
+          project="NAB Cards Template"
+          role="Frontend Developer"
+          technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
+          link="https://www.nab.com.au/personal/banking/credit-cards"
+        />
 
+      <CardWebsite 
+          poster="//www.digz.com.au/portfolio/hardwire/esssuper/poster.jpg" 
+          client="Hardwire Melbourne"
+          project="ESS Super Interactive SVG"
+          role="Frontend Developer"
+          technology="SVG, JS, GSAP, ScrollMagic"
+          link="https://www.esssuper.com.au/investments/investment-approach/investment-approach-tool"
+        />
 
+      <CardWebsite 
+          poster="//www.digz.com.au/portfolio/AirActive/website/poster.jpg" 
+          client="AirActive"
+          project="Pomotional Webiste"
+          role="Frontend Developer"
+          technology="Wordpress"
+          link="http://airactiveapp.com"
+        />
 
+      <CardWebsite 
+          poster="//www.digz.com.au/portfolio/hardwire/meningococcal/poster.jpg" 
+          client="Hardwire Melbourne"
+          project="GSK Know Meningococcal"
+          role="Frontend Developer"
+          technology="HTML5, CSS3, BEM, LESS, JS, GIT, Gulp"
+          link="https://www.knowmeningococcal.com.au/"
+        />
+
+      <CardWebsite 
+          poster="//www.digz.com.au/portfolio/Clemenger/NAB/loans/poster.jpg" 
+          client="Clemenger BBDO Melbourne"
+          project="NAB Loans Template"
+          role="Frontend Developer"
+          technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
+          link="https://www.nab.com.au/personal/loans/personal-loans"
+        />
+      
       {data.allContentfulProject.edges.map(edge => {
       //const windowGlobal = typeof window !== 'undefined' && window
       //const param = windowGlobal.location.search.slice(1);
@@ -133,7 +171,6 @@ const IndexPage = ({ children, data }) => (
           <Cell title={cell.title} image={cell.image} />
         ))}
       </SectionCellGroup>
-        <Wave />
         <Footer />
       </>
     )}

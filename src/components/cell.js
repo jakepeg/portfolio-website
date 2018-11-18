@@ -10,17 +10,18 @@ const CellGroup = styled.div`
 `
 
 const CellImage = styled.div`
-    width: 30px;
-    height: 30px;
-    background: #fff;
+    width: 27px;
+    height: 27px;
+    opacity: 0.8;
     border-radius: 0px;
     background-image: url(${props => props.image});
-    background-size: 30px;
+    background-size: 27px;
 `
 
 const CellTitle = styled.div`
     font-size: 20px;
     padding: 30px 0;
+    color: #fff;
 `
 
 const Cell = props => (

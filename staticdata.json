@@ -2,51 +2,51 @@
     "cells": [
         {
             "title": "HTML5 Markup and Templating",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
-            "title": "CSS, SASS, LESS and Styled Components)",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "title": "CSS, SASS, LESS and Styled Components",
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Vanilla JavaScript, Frameworks and Libraries",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "SVG and Interaction Animation using GSAP",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Design Systems with Figma",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Wordpress and Headless CMSs",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "UX Tools - Axure, Moqups, Balsamiq",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Bootstrap, Foundation, MaterialCSS, CSSGrid",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Sizmek, FlashTalkinng and DoubleClick (certified)",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "REST API, AJAX and GraphQL",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Workflow - GIT, Gulp, WebPack, NPM",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         },
         {
             "title": "Project Management - Agile, Jira, Slack",
-            "image": "http://jakekemsley.com/img/skills-icon.svg"
+            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
         }
     ]
 }

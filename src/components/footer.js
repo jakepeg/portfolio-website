@@ -15,11 +15,11 @@ const Footer = props => (
         <WaveTop><Wave /></WaveTop>
         <div id="contact"><br /></div>
         <div className='footerGroup'>
-            <p>Say Hi!</p>
-            <p>+41 (0)76 536 2302 <br />hello@jakekemsley.com</p>
+            <h2>Say Hi!</h2>
+            <p>+41 (0)76 536 2302 <br />jakepeg@gmail.com</p>
             <div className="Logos">
                 <a href="https://www.linkedin.com/in/jkemsley/"><img src={require('../images/logo-linkedin.svg')} width="40" /></a>
-                <a href="https://twitter.com/kempstead"><img src={require('../images/logo-twitter.svg')} width="40" /></a>
+                <a href="https://twitter.com/On1Digital"><img src={require('../images/logo-twitter.svg')} width="40" /></a>
                 <a href="https://www.instagram.com/jakekempo/"><img src={require('../images/logo-instagram.svg')} width="40" /></a>
                 <a href="https://github.com/jakepeg"><img src={require('../images/logo-git.svg')} width="40" /></a>
             </div>

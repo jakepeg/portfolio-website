@@ -33,7 +33,7 @@ handleScroll = (event) => {
           <Link to="/"><img src={require('../images/jk-logo.svg')} width="40" /></Link>
           <Link to="/#work">Work</Link>
           <Link to="/#skills">Skills</Link>
-          <Link to="/#contact"><button>Say Hi!</button></Link>
+          <Link to="/#contact">Say Hi</Link>
           {/* <Link to="/buy"><button>Say Hi!</button></Link> */}
         </div>
       </div> 
