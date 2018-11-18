@@ -15,7 +15,8 @@ const Footer = props => (
         <WaveTop><Wave /></WaveTop>
         <div id="contact"><br /></div>
         <div className='footerGroup'>
-            <h2>Say Hi!</h2>
+            <h2>Hi!</h2>
+            <img src={require('../images/poly-jake.svg')} width="200" />
             <p>+41 (0)76 536 2302 <br />jakepeg@gmail.com</p>
             <div className="Logos">
                 <a href="https://www.linkedin.com/in/jkemsley/"><img src={require('../images/logo-linkedin.svg')} width="40" /></a>

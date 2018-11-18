@@ -131,7 +131,7 @@ const IndexPage = ({ children, data }) => (
           client="Hardwire Melbourne"
           project="GSK Know Meningococcal"
           role="Frontend Developer"
-          technology="HTML5, CSS3, BEM, LESS, JS, GIT, Gulp"
+          technology="HTML5, CSS3, LESS, JS, GIT, Gulp"
           link="https://www.knowmeningococcal.com.au/"
         />
 
