@@ -1,52 +1,52 @@
 {
-    "cells": [
-        {
-            "title": "HTML5 Markup and Templating",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "CSS, SASS, LESS and Styled Components",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Vanilla JavaScript, Frameworks and Libraries",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "SVG and Interaction Animation using GSAP",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Design Systems with Figma",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Wordpress and Headless CMSs",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "UX Tools - Axure, Moqups, Balsamiq",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Bootstrap, Foundation, MaterialCSS, CSSGrid",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Sizmek, FlashTalkinng and DoubleClick (certified)",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "REST API, AJAX and GraphQL",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Workflow - GIT, Gulp, WebPack, NPM",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        },
-        {
-            "title": "Project Management - Agile, Jira, Slack",
-            "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
-        }
-    ]
+  "cells": [
+    {
+      "title": "HTML Markup and Templating",
+      "image": "../images/skills-icon.svg"
+    },
+    {
+      "title": "CSS, SASS & Styled Components",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "Vanilla JavaScript, Frameworks & Libraries",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "SVG & Interaction Animation using GSAP",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "UI Design with Figma & Sketch",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "Wordpress, Contentful, Firebase & Netlify",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "React, React Native & Gatsby",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "Bootstrap, Foundation, MaterialCSS & CSSGrid",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "Sizmek, FlashTalking & DoubleClick (certified)",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "REST, APIs, Apollo & GraphQL",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "GIT & GIT driven workflow",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    },
+    {
+      "title": "Agile, Jira, Slack, Trello & Google Docs",
+      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+    }
+  ]
 }

@@ -86,9 +86,26 @@ const IndexPage = ({ children, data }) => (
         <div className="Cards">
           <h2>Selected Works</h2>
 
+          <div className="skillz">
+            <p>
+              I’ve built hundreds of digital products over the last 20 years,
+              working for creative agencies and start-ups. Here’s a selection of
+              some of the more interesting projects I’ve worked on
+            </p>
+          </div>
+
           {/* <Filter /> */}
 
           <div className="CardGroup">
+            <CardWebsite
+              poster="../evooq-poster.jpg"
+              client="Evooq Switzerland"
+              project="Company Webiste"
+              role="Frontend Developer"
+              technology="React, Gatsby, Contentful, GIT, Netlify"
+              link="https://www.evooq.ch"
+            />
+
             <CardWebsite
               poster="../aussie-poster.jpg"
               client="WorkingParty Melbourne"
@@ -114,15 +131,6 @@ const IndexPage = ({ children, data }) => (
               role="Developer / Animator"
               technology="SVG, JS, GSAP, ScrollMagic"
               link="https://www.esssuper.com.au/investments/investment-approach/investment-approach-tool"
-            />
-
-            <CardWebsite
-              poster="../airactive-poster.jpg"
-              client="AirActive"
-              project="Pomotional Webiste"
-              role="Frontend Developer"
-              technology="Wordpress"
-              link="http://airactiveapp.com"
             />
 
             <CardWebsite
@@ -169,6 +177,15 @@ const IndexPage = ({ children, data }) => (
           <br />{' '}
         </div>
         <h2>Skills</h2>
+
+        <div className="skillz">
+          <p>
+            I create scalable, accessible, search engine optimised, secure and
+            blazingly fast (JAMStack) websites, apps, EDM’s and rich media
+            banners using the following tools
+          </p>
+        </div>
+
         <SectionCellGroup>
           {staticdata.cells.map(cell => (
             <Cell title={cell.title} image={cell.image} />

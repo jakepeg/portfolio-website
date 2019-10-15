@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   font-size: 20px;
-  webkit-font-smoothing: antialiased;
+  /* webkit-font-smoothing: antialiased; */
   line-height: 1.3;
   background-color: #212c40;
 }
@@ -16,15 +16,47 @@ a {
   font-weight: 600;
 }
 
+.skillz {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  justify-items: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.skillz p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 50px 0;
+  max-width: 1000px;
+  text-align: center;
+}
 
 .CardGroup {
   margin: 50px 40px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  /* grid-gap: 40px; */
+  row-gap: 140px;
+  column-gap: 40px;
   justify-items: center;
   height: auto;
   overflow: hidden;
+}
+
+@media (max-width: 1350px) {
+  .CardGroup {
+    row-gap: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .CardGroup {
+    row-gap: 70px;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -60,26 +92,26 @@ h2 {
 /* PORTFOLIO FILTER LINKS */
 
 .current-filter {
-	border-top: #000 1px solid!important;
+  border-top: #000 1px solid !important;
 }
 
-.filter a{
-	padding: 10px 20px;
-	display:inline-block;
-	color:#003;
-	text-decoration:none;
-	transition:all 0.2s;
-	border-bottom: #fff 1px solid;
-	border-top: #fff 1px solid;
+.filter a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: #003;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: #fff 1px solid;
+  border-top: #fff 1px solid;
 }
-.filter a:hover{
-	border-bottom: #000 1px solid;
-	transition:all 0.2s;
+.filter a:hover {
+  border-bottom: #000 1px solid;
+  transition: all 0.2s;
 }
-.filter a:active{
-	background:#999
+.filter a:active {
+  background: #999;
 }
-.filter{
-	margin: 28px 0 10px 0;
-	text-align:center
+.filter {
+  margin: 28px 0 10px 0;
+  text-align: center;
 }

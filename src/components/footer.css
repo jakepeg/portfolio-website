@@ -1,78 +1,75 @@
 .footer {
-    background: url('../images/trianglify.svg');
-    height: 800px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .footer svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
+  background: url('../images/trianglify.svg');
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.footer svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footerGroup {
+  margin: 0 auto;
+  max-width: 560px;
+  text-align: center;
+}
+
+.footer h2 {
+  color: #5f8fd8;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 69px;
+}
+
+@media (max-width: 640px) {
   .footerGroup {
-    margin: 0 auto;
-    max-width: 560px;
-    text-align: center;
+    padding: 100px 20px;
   }
-  
-  .footer h2 {
-    color: #5f8fd8;
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 1.2;
-  }
-  
+
   .footer p {
-    color:#fff;
-    font-size: 30px;
-    line-height: 1.5;
-    margin-bottom: 69px;
+    font-size: 24px;
   }
 
-  @media (max-width: 640px) {
-    .footerGroup {
-      padding: 100px 20px;
-    }
-  
-
-    .footer p {
-      font-size: 24px;
-    }
-
-    .footer {
-      height: 1000px;
-    }
-
-
+  .footer {
+    height: 1000px;
   }
-  
+}
+
 .Logos img {
-    outline: none;
-    cursor: pointer;
-    transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Logos img:hover {
-    /* transform: translateY(-3px); */
-    width: 50px;
+  /* transform: translateY(-3px); */
+  width: 50px;
 }
-  
+
+.footer .Logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+@media (max-width: 640px) {
   .footer .Logos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (max-width: 640px) {
-    .footer .Logos {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  #contact {
-    height: 150px;
-  }
+}
+
+#contact {
+  height: 150px;
+}
