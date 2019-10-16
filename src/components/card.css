@@ -32,6 +32,7 @@
   transition: opacity 0.25s ease-in-out;
   background: #1d8cc2;
   height: 250px;
+  z-index: 101;
 }
 
 .Card-info:hover {

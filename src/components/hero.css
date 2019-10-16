@@ -1,101 +1,110 @@
 .hero {
-    background: url('../images/trianglify.svg');
-    height: 920px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  background: url('../images/trianglify.svg');
+  height: 920px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero svg {
+  position: absolute;
+  top: 600px;
+  left: 0;
+}
+
+.heroGroup {
+  margin: 0 auto;
+  width: 100%;
+  /* padding: 150px 50px; */
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.2;
+  animation: HeroAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  line-height: 1.5;
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+  margin-bottom: 69px;
+}
+
+.hero .Button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #e94969;
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 20px;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 100px 20px;
   }
-  
-  .hero svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .heroGroup {
-    margin: 0 auto;
-    max-width: 560px;
-    padding: 150px 50px;
-    text-align: center;
-  }
-  
+
   .hero h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1.2;
-    animation: HeroAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-    opacity: 0;
+    font-size: 40px;
   }
-  
+
   .hero p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 30px;
-    line-height: 1.5;
-    animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-    opacity: 0;
-    margin-bottom: 69px;
+    font-size: 24px;
   }
-  
-  .hero .Button {
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #E94969;
-    padding: 9px 20px;
-    border: 1px solid rgba(255, 255, 255, 1);
-    border-radius: 20px;
-  }
-  
-  @media (max-width: 640px) {
-    .HeroGroup {
-      padding: 100px 20px;
-    }
-  
-    .hero h1 {
-      font-size: 40px;
-    }
-  
-    .hero p {
-      font-size: 24px;
-    }
-  }
-  
+}
+
 .Logos img {
-    outline: none;
-    cursor: pointer;
-    transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Logos img:hover {
-    /* transform: translateY(-3px); */
-    width: 50px;
+  /* transform: translateY(-3px); */
+  width: 50px;
 }
-  
+
+.hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin: 100px 0;
+  justify-items: center;
+}
+
+@media (max-width: 640px) {
   .hero .Logos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    margin: 100px 0;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (max-width: 640px) {
-    .hero .Logos {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  @keyframes HeroAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(20px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px)
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
+}

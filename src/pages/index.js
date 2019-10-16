@@ -73,6 +73,7 @@ const IndexPage = ({ children, data }) => (
         >
           <html lang="en" />
           <script src={'../delaunator.min.js'} />
+          <script src={'../delaunator-script.js'} />
         </Helmet>
         <Header />
         {children}
@@ -82,116 +83,117 @@ const IndexPage = ({ children, data }) => (
           {' '}
           <br />{' '}
         </div>
+        <div className="zContainer">
+          <div className="Cards">
+            <h2>Selected Works</h2>
 
-        <div className="Cards">
-          <h2>Selected Works</h2>
+            <div className="skillz">
+              <p className="italica">
+                I’ve built hundreds of digital products over the last 20 years,
+                working for creative agencies and start-ups. Here’s a selection
+                of projects I’ve worked on
+              </p>
+            </div>
+
+            {/* <Filter /> */}
+
+            <div className="CardGroup">
+              <CardWebsite
+                poster="../evooq-poster.jpg"
+                client="Evooq Switzerland"
+                project="Company Webiste"
+                role="Frontend Developer"
+                technology="React, Gatsby, Contentful, GIT, Netlify"
+                link="https://www.evooq.ch"
+              />
+
+              <CardWebsite
+                poster="../aussie-poster.jpg"
+                client="WorkingParty Melbourne"
+                project="Aussie Website Redesign"
+                role="Frontend Developer"
+                technology="HTML5, CSS3, BEM, LESS, JS, GIT, Gulp"
+                link="https://www.aussie.com.au/"
+              />
+
+              <CardWebsite
+                poster="../nab-cards-poster.jpg"
+                client="Clemenger BBDO Melbourne"
+                project="NAB Cards Template"
+                role="Frontend Developer"
+                technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
+                link="https://www.nab.com.au/personal/banking/credit-cards"
+              />
+
+              <CardWebsite
+                poster="../esssuper-poster.jpg"
+                client="Hardwire Melbourne"
+                project="ESS Super Interactive SVG"
+                role="Developer / Animator"
+                technology="SVG, JS, GSAP, ScrollMagic"
+                link="https://www.esssuper.com.au/investments/investment-approach/investment-approach-tool"
+              />
+
+              <CardWebsite
+                poster="../meningococcal-poster.jpg"
+                client="Hardwire Melbourne"
+                project="GSK Know Meningococcal"
+                role="Frontend Developer"
+                technology="HTML5, CSS3, LESS, JS, GIT, Gulp"
+                link="https://www.knowmeningococcal.com.au/"
+              />
+
+              <CardWebsite
+                poster="../nab-loans-poster.jpg"
+                client="Clemenger BBDO Melbourne"
+                project="NAB Loans Template"
+                role="Frontend Developer"
+                technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
+                link="https://www.nab.com.au/personal/loans/personal-loans"
+              />
+
+              {data.allContentfulProject.edges.map(edge => {
+                //const windowGlobal = typeof window !== 'undefined' && window
+                //const param = windowGlobal.location.search.slice(1);
+                return (
+                  <Card
+                    client={edge.node.client}
+                    project={edge.node.project}
+                    role={edge.node.role}
+                    technology={edge.node.technology}
+                    poster={edge.node.poster.file.url}
+                    id={edge.node.id}
+                    link={edge.node.link}
+                    createdAt={edge.node.createdAt}
+                    projecttype={edge.node.type}
+                    width={edge.node.width}
+                    height={edge.node.height}
+                  />
+                )
+              })}
+            </div>
+          </div>
+          <div id="skills">
+            {' '}
+            <br />{' '}
+          </div>
+          <h2>Skills</h2>
 
           <div className="skillz">
             <p className="italica">
-              I’ve built hundreds of digital products over the last 20 years,
-              working for creative agencies and start-ups. Here’s a selection of
-              projects I’ve worked on
+              Tons of experience creating scalable, accessible, search
+              optimised, secure and blazingly fast (JAMStack) websites, apps,
+              EDM’s and rich media banners using the following tools
             </p>
           </div>
 
-          {/* <Filter /> */}
-
-          <div className="CardGroup">
-            <CardWebsite
-              poster="../evooq-poster.jpg"
-              client="Evooq Switzerland"
-              project="Company Webiste"
-              role="Frontend Developer"
-              technology="React, Gatsby, Contentful, GIT, Netlify"
-              link="https://www.evooq.ch"
-            />
-
-            <CardWebsite
-              poster="../aussie-poster.jpg"
-              client="WorkingParty Melbourne"
-              project="Aussie Website Redesign"
-              role="Frontend Developer"
-              technology="HTML5, CSS3, BEM, LESS, JS, GIT, Gulp"
-              link="https://www.aussie.com.au/"
-            />
-
-            <CardWebsite
-              poster="../nab-cards-poster.jpg"
-              client="Clemenger BBDO Melbourne"
-              project="NAB Cards Template"
-              role="Frontend Developer"
-              technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
-              link="https://www.nab.com.au/personal/banking/credit-cards"
-            />
-
-            <CardWebsite
-              poster="../esssuper-poster.jpg"
-              client="Hardwire Melbourne"
-              project="ESS Super Interactive SVG"
-              role="Developer / Animator"
-              technology="SVG, JS, GSAP, ScrollMagic"
-              link="https://www.esssuper.com.au/investments/investment-approach/investment-approach-tool"
-            />
-
-            <CardWebsite
-              poster="../meningococcal-poster.jpg"
-              client="Hardwire Melbourne"
-              project="GSK Know Meningococcal"
-              role="Frontend Developer"
-              technology="HTML5, CSS3, LESS, JS, GIT, Gulp"
-              link="https://www.knowmeningococcal.com.au/"
-            />
-
-            <CardWebsite
-              poster="../nab-loans-poster.jpg"
-              client="Clemenger BBDO Melbourne"
-              project="NAB Loans Template"
-              role="Frontend Developer"
-              technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
-              link="https://www.nab.com.au/personal/loans/personal-loans"
-            />
-
-            {data.allContentfulProject.edges.map(edge => {
-              //const windowGlobal = typeof window !== 'undefined' && window
-              //const param = windowGlobal.location.search.slice(1);
-              return (
-                <Card
-                  client={edge.node.client}
-                  project={edge.node.project}
-                  role={edge.node.role}
-                  technology={edge.node.technology}
-                  poster={edge.node.poster.file.url}
-                  id={edge.node.id}
-                  link={edge.node.link}
-                  createdAt={edge.node.createdAt}
-                  projecttype={edge.node.type}
-                  width={edge.node.width}
-                  height={edge.node.height}
-                />
-              )
-            })}
-          </div>
+          <SectionCellGroup>
+            {staticdata.cells.map(cell => (
+              <Cell title={cell.title} image={cell.image} />
+            ))}
+          </SectionCellGroup>
+          <Footer />
         </div>
-        <div id="skills">
-          {' '}
-          <br />{' '}
-        </div>
-        <h2>Skills</h2>
-
-        <div className="skillz">
-          <p className="italica">
-            Tons of experience creating scalable, accessible, search optimised,
-            secure and blazingly fast (JAMStack) websites, apps, EDM’s and rich
-            media banners using the following tools
-          </p>
-        </div>
-
-        <SectionCellGroup>
-          {staticdata.cells.map(cell => (
-            <Cell title={cell.title} image={cell.image} />
-          ))}
-        </SectionCellGroup>
-        <Footer />
       </>
     )}
   />
