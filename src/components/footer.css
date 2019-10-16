@@ -1,6 +1,6 @@
 .footer {
   background: url('../images/trianglify.svg');
-  height: 800px;
+  height: 950px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -14,7 +14,7 @@
 
 .footerGroup {
   margin: 0 auto;
-  max-width: 560px;
+  /* max-width: 560px; */
   text-align: center;
 }
 
@@ -59,8 +59,9 @@
 
 .footer .Logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: auto 40px 40px 40px 40px auto;
+  grid-gap: 20px;
   justify-items: center;
 }
 

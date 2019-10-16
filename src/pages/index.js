@@ -87,10 +87,10 @@ const IndexPage = ({ children, data }) => (
           <h2>Selected Works</h2>
 
           <div className="skillz">
-            <p>
+            <p className="italica">
               I’ve built hundreds of digital products over the last 20 years,
               working for creative agencies and start-ups. Here’s a selection of
-              some of the more interesting projects I’ve worked on
+              projects I’ve worked on
             </p>
           </div>
 
@@ -179,10 +179,10 @@ const IndexPage = ({ children, data }) => (
         <h2>Skills</h2>
 
         <div className="skillz">
-          <p>
-            I create scalable, accessible, search engine optimised, secure and
-            blazingly fast (JAMStack) websites, apps, EDM’s and rich media
-            banners using the following tools
+          <p className="italica">
+            Tons of experience creating scalable, accessible, search optimised,
+            secure and blazingly fast (JAMStack) websites, apps, EDM’s and rich
+            media banners using the following tools
           </p>
         </div>
 

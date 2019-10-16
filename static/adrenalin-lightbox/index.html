@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="expires" content="0">
+    <script src="js/Enabler.js"></script>  
+    <script src="js/CLMBanners.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="application/javascript">var clickTag = "";</script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="collapse_content">
+            <div class="clm-container"><img id="text01" src="imgs/text01.png"  width="300" height="250"></div>
+
+            <div id="image-container" class="hero-container">
+                <img id="hero" src="imgs/hero.jpg" />
+            </div>
+
+            <div class="clm-container"><img id="logo-collapsed" src="imgs/logo-collapsed.png"  width="300" height="250"></div>
+
+            <div class="border" id="border-collapsed"></div>
+
+            <div id="expand">
+                <img src="imgs/expand-text.png" id="button-rollover" width="141" height="32" />
+                <img src="imgs/expand-tap-text.png" id="button-tap" width="141" height="32" />
+                <img src="imgs/expand-clickthrough-text.png" id="button-fom" width="141" height="32" />
+            </div>
+
+        </div>
+        <div id="expanded_content">
+            <div id="collapse-button"><img src="imgs/close.png"></div>
+            <div class="expanded-container"><img src="imgs/logo-expanded.png"></div>
+            <div class="expanded-container"><img src="imgs/text-expanded.png"></div>
+            <div class="expanded-container"><img src="imgs/logo-text-expanded.png"></div>
+
+            <div id="clicktag"></div>
+
+            <div id="gallery">
+                <div id="feature">
+                    <div class="feature-container">
+                        <img class="feature-image" src="imgs/image01.jpg">
+                    </div>
+                    <div class="feature-container">
+                        <img class="feature-image" src="imgs/image02.jpg">
+                    </div>
+                    <div class="feature-container">
+                        <img class="feature-image" src="imgs/image03.jpg">
+                    </div>
+                    <div class="feature-container">
+                        <img class="feature-image" src="imgs/image04.jpg">
+                    </div>
+                </div>
+                <div id="thumbnails">
+                    <div class="thumbnail selected">
+                        <div class="thumb-border selected"></div>
+                        <img class="img-thumb" src="imgs/image01.jpg">
+                    </div>
+                    <div class="thumbnail">
+                        <div class="thumb-border"></div>
+                        <img class="img-thumb" src="imgs/image02.jpg">
+                    </div>
+                    <div class="thumbnail">
+                        <div class="thumb-border"></div>
+                        <img class="img-thumb" src="imgs/image03.jpg">
+                    </div>
+                    <div class="thumbnail">
+                        <div class="thumb-border"></div>
+                        <img class="img-thumb" src="imgs/image04.jpg">
+                    </div>
+                </div>
+                
+            
+                
+                
+            </div>
+
+            <div id="cta"><img src="imgs/cta-text.png"  width="122" height="32"></div>
+
+        </div>
+
+    </div>
+    
+        <script>
+            function checkInit() {
+                startAnimation();
+            }
+
+            function triggerClickthrough() {
+                console.log("Clickthrough Triggered");
+            }
+			
+			function bgExitHandler(e) {
+			  Enabler.exitOverride('Background Exit', clickTag);
+			}
+			
+			document.getElementById('cta').addEventListener('click', bgExitHandler, false);	
+			
+			/*
+			function closeClickHandler(e) {
+			   Enabler.reportManualClose();
+			   //Enabler.close();
+			   Enabler.requestCollapse();
+			   console.log("close clicked");
+			}
+			
+			document.getElementById('collapse-button').addEventListener('click', closeClickHandler, false);
+*/
+
+
+
+  collapseButton = document.getElementById('collapse-button');
+  collapseButton.addEventListener('click', onCollapseClickHandler, false);
+  
+  function onCollapseClickHandler(){
+    Enabler.requestCollapse();
+    Enabler.stopTimer('Panel Expansion');
+	console.log("close clicked");
+  }
+        </script>
+    
+    
+    
+    
+</body>
+
+</html>
+

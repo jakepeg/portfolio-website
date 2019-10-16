@@ -47,6 +47,11 @@ a {
   overflow: hidden;
 }
 
+.italica {
+  color: #ccc !important;
+  font-style: italic;
+}
+
 @media (max-width: 1350px) {
   .CardGroup {
     row-gap: 100px;

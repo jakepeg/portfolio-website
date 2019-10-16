@@ -20,12 +20,22 @@ const Footer = props => (
     </div>
     <div className="footerGroup">
       <h2>Hi!</h2>
+
+      <div className="skillz">
+        <p className="italica">
+          If you're looking for someone with my skills then please drop me a
+          line. I'm currently based in St Prex, Switzerland - if you're in the
+          area let's hook up for coffee (or a beer)
+        </p>
+      </div>
+
       <img src={require('../images/poly-jake.svg')} width="200" />
       <p>
         +41 (0)76 536 2302 <br />
         jakepeg@gmail.com
       </p>
       <div className="Logos">
+        <span />
         <a href="https://www.linkedin.com/in/jkemsley/">
           <img src={require('../images/logo-linkedin.svg')} width="40" />
         </a>
@@ -38,6 +48,7 @@ const Footer = props => (
         <a href="https://github.com/jakepeg">
           <img src={require('../images/logo-git.svg')} width="40" />
         </a>
+        <span />
       </div>
     </div>
   </div>
