@@ -20,7 +20,7 @@
 
 .footer h2 {
   color: #5f8fd8;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -38,11 +38,11 @@
   }
 
   .footer p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .footer {
-    height: 1000px;
+    height: 1084px;
   }
 }
 
@@ -66,9 +66,9 @@
 }
 
 @media (max-width: 640px) {
-  .footer .Logos {
+  /* .footer .Logos {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 
 #contact {
