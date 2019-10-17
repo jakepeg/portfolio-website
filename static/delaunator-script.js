@@ -37,7 +37,7 @@ class Thpace {
     animate() {
         const ctx = this.ctx;
 
-        ctx.clearRect(0,0,this.width, this.height);
+    //    ctx.clearRect(0,0,this.width, this.height);
 
         this.triangles.forEach((t) => {
             ctx.beginPath();

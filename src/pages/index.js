@@ -72,8 +72,8 @@ const IndexPage = ({ children, data }) => (
           ]}
         >
           <html lang="en" />
-          <script src={'../delaunator.min.js'} />
-          <script src={'../delaunator-script.js'} />
+          {/* <script src={'../delaunator.min.js'} />
+          <script src={'../delaunator-script.js'} /> */}
         </Helmet>
         <Header />
         {children}

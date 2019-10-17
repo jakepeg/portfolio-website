@@ -5,7 +5,7 @@ import './hero.css'
 
 const Hero = props => (
   <div className="hero">
-    <canvas id="canvas" />
+    {/* <canvas id="canvas" /> */}
 
     <div className="heroGroup">
       <h1>
