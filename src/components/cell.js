@@ -34,7 +34,11 @@ const CellTitle = styled.div`
 const Cell = props => (
   <CellGroup>
     <CellImage>
-      <img src={require('../images/skills-icon.svg')} width="20" />
+      <img
+        src={require('../images/skills-icon.svg')}
+        width="20"
+        alt="Tool icon"
+      />
     </CellImage>
     <CellTitle>{props.title}</CellTitle>
   </CellGroup>
