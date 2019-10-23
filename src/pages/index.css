@@ -89,7 +89,7 @@ a {
     margin: 0 40px 50px 40px;
   }
 
-  #cardBanner {
+  .cardBanner {
     display: none;
   }
 }

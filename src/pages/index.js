@@ -36,27 +36,27 @@ const IndexPage = ({ children, data }) => (
           }
         }
 
-        allContentfulProject(sort: { fields: [createdAt], order: ASC }) {
-          edges {
-            node {
-              client
-              project
-              role
-              technology
-              link
-              id
-              width
-              height
-              type
-              poster {
-                file {
-                  url
-                }
-              }
-              createdAt
-            }
-          }
-        }
+        # allContentfulProject(sort: { fields: [createdAt], order: ASC }) {
+        #   edges {
+        #     node {
+        #       client
+        #       project
+        #       role
+        #       technology
+        #       link
+        #       id
+        #       width
+        #       height
+        #       type
+        #       poster {
+        #         file {
+        #           url
+        #         }
+        #       }
+        #       createdAt
+        #     }
+        #   }
+        # }
       }
     `}
     render={data => (
@@ -152,25 +152,47 @@ const IndexPage = ({ children, data }) => (
                 link="https://www.nab.com.au/personal/loans/personal-loans"
               />
 
-              {data.allContentfulProject.edges.map(edge => {
-                //const windowGlobal = typeof window !== 'undefined' && window
-                //const param = windowGlobal.location.search.slice(1);
-                return (
-                  <Card
-                    client={edge.node.client}
-                    project={edge.node.project}
-                    role={edge.node.role}
-                    technology={edge.node.technology}
-                    poster={edge.node.poster.file.url}
-                    id={edge.node.id}
-                    link={edge.node.link}
-                    createdAt={edge.node.createdAt}
-                    projecttype={edge.node.type}
-                    width={edge.node.width}
-                    height={edge.node.height}
-                  />
-                )
-              })}
+              <Card
+                client="MCN Sydney"
+                project="Alvin Chipmonks Movie Game"
+                role="Developer"
+                technology="Javascript, PhaserJS, Sizmek"
+                poster="../chipmonks-poster.jpg"
+                id="001"
+                link="../chipmunks-movie/"
+                createdAt="yesterday"
+                projecttype="Banner Game"
+                width="600"
+                height="500"
+              />
+
+              <Card
+                client="Leo Burnett Melbournne"
+                project="Old El Paso Pachanga"
+                role="Developer"
+                technology="HTML5, CSS, JS, Sizmek"
+                poster="../elpasso-poster.jpg"
+                id="002"
+                link="../pachanga/index.html"
+                createdAt="monnday"
+                projecttype="Banner"
+                width="300"
+                height="600"
+              />
+
+              <Card
+                client="Clemenger BBDO Melbournne"
+                project="Mercedes Instantly Thrilling"
+                role="Developer"
+                technology="HTML5, CSS, JS, DoubleClick"
+                poster="../mercedes-poster.jpg"
+                id="003"
+                link="../adrenalin-lightbox/index.html"
+                createdAt="tuesday"
+                projecttype="Banner"
+                width="970"
+                height="660"
+              />
             </div>
           </div>
           <div id="skills">

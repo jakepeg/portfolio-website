@@ -20,7 +20,7 @@ class Card extends React.Component {
     const urlID = windowGlobal.location
     console.log(urlID)
     return (
-      <div id="cardBanner">
+      <div className="cardBanner">
         {urlID && (
           <Modal
             width={this.props.width}
@@ -42,7 +42,8 @@ class Card extends React.Component {
             className={'Card ' + this.props.projecttype}
             onClick={e => this.showPhoto(e, this.props.id)}
           >
-            <img src={'https:' + this.props.poster} />
+            {/* <img src={'https:' + this.props.poster} /> */}
+            <img src={this.props.poster} />
             <div className="Card-info">
               <p>
                 <span className="Card-label">Client</span>
