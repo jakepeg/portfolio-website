@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-display: auto;
+  font-display: fallback;
   margin: 0;
   font-size: 20px;
   /* webkit-font-smoothing: antialiased; */
