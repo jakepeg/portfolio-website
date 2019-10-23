@@ -5,7 +5,7 @@ import './card.css'
 const Cardwebsite = props => (
   <div className="Card">
     <img src={props.poster} alt={props.technology} />
-    <a href={props.link} target="_blank">
+    <a href={props.link} target="_blank" rel="noopener">
       <div className="Card-info">
         <p>
           <span className="Card-label">Client</span>
