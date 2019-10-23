@@ -43,7 +43,7 @@ class Card extends React.Component {
             onClick={e => this.showPhoto(e, this.props.id)}
           >
             {/* <img src={'https:' + this.props.poster} /> */}
-            <img src={this.props.poster} />
+            <img src={this.props.poster} alt={this.props.technology} />
             <div className="Card-info">
               <p>
                 <span className="Card-label">Client</span>

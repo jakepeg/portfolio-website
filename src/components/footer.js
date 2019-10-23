@@ -29,24 +29,49 @@ const Footer = props => (
         </p>
       </div>
 
-      <img src={require('../images/poly-jake.svg')} width="200" />
+      <img alt="Mugshot" src={require('../images/poly-jake.svg')} width="200" />
       <p>
         +41 (0)76 536 2302 <br />
         jakepeg@gmail.com
       </p>
       <div className="Logos">
         <span />
-        <a href="https://www.linkedin.com/in/jkemsley/">
-          <img src={require('../images/logo-linkedin.svg')} width="40" />
+        <a
+          aria-label="Link to my Linkedin profile"
+          href="https://www.linkedin.com/in/jkemsley/"
+        >
+          <img
+            alt="Linkedin logo"
+            src={require('../images/logo-linkedin.svg')}
+            width="40"
+          />
         </a>
-        <a href="https://twitter.com/On1Digital">
-          <img src={require('../images/logo-twitter.svg')} width="40" />
+        <a aria-label="Link to Twitter" href="https://twitter.com/On1Digital">
+          <img
+            alt="Twitter logo"
+            src={require('../images/logo-twitter.svg')}
+            width="40"
+          />
         </a>
-        <a href="https://www.instagram.com/jakekempo/">
-          <img src={require('../images/logo-instagram.svg')} width="40" />
+        <a
+          aria-label="Link to my Instagram profile"
+          href="https://www.instagram.com/jakekempo/"
+        >
+          <img
+            alt="Instagram logo"
+            src={require('../images/logo-instagram.svg')}
+            width="40"
+          />
         </a>
-        <a href="https://github.com/jakepeg">
-          <img src={require('../images/logo-git.svg')} width="40" />
+        <a
+          aria-label="Link to my GIT profile"
+          href="https://github.com/jakepeg"
+        >
+          <img
+            alt="GIT logo"
+            src={require('../images/logo-git.svg')}
+            width="40"
+          />
         </a>
         <span />
       </div>
