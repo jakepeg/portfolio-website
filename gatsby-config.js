@@ -4,7 +4,7 @@ module.exports = {
     description:
       'Customer focussed Digital All-Rounder, with a track record of successfully delivering awesome digital experiences.',
     keywords:
-      'Web design, web designer, project manager, web developer, frontend developer, html5 banners, websites, apps, display, edms, games, microsites, landing pages',
+      'JAMStack, react, gatsby, gatsbyjs, Web design, web designer, project manager, web developer, frontend developer, html5 banners, websites, apps, display, edms, games, microsites, landing pages',
   },
   plugins: [
     {
@@ -14,14 +14,19 @@ module.exports = {
         head: true,
       },
     },
-    'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        spaceId: 'c66kaa3uliew',
-        accessToken:
-          '71fb3137adbf1df4e638d369fab160091410b78d4b08f8bf940a847c09a48cc6',
+        name: `Jake Kemsley Portfolio`,
+        short_name: `JK Folio`,
+        start_url: `/`,
+        background_color: `#212c40`,
+        theme_color: `#5f8fd8`,
+        display: `standalone`,
+        icon: `src/images/jk-logo.svg`,
       },
     },
+    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-offline`,
   ],
 }

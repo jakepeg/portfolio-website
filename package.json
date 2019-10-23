@@ -1,22 +1,21 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "portfolio-website",
+  "description": "Jake Kemsley Portfolio Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jake Kemsley <jakepeg@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.0",
-    "gatsby-plugin-google-analytics": "^2.0.7",
-    "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-source-contentful": "^1.3.54",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "react-iframe": "^1.3.3",
+    "gatsby": "^2.17.2",
+    "gatsby-plugin-google-analytics": "^2.1.23",
+    "gatsby-plugin-manifest": "^2.2.23",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.13",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react-iframe": "^1.8.0",
     "react-overdrive": "0.0.10",
     "react-scrollable-anchor": "^0.6.1",
-    "styled-components": "^4.0.3"
+    "styled-components": "^4.4.0"
   },
   "keywords": [
     "gatsby"
@@ -29,7 +28,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "prettier": "^1.18.2"
   },
   "repository": {
     "type": "git",
