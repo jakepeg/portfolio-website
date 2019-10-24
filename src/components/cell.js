@@ -10,7 +10,7 @@ const CellGroup = styled.div`
   margin: 0 40px;
 
   @media (max-width: 800px) {
-    margin: 0 40px;
+    margin: 0;
   }
 `
 
