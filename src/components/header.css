@@ -1,59 +1,79 @@
 .Header {
-    position:fixed;
-    width:100%;
-    padding: 50px 0;
-    z-index: 100;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+  position: fixed;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 100;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .HeaderScrolled {
-    background: rgba(0,0,0, 0.8);
-    padding: 15px 0;
-    backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  backdrop-filter: blur(20px);
 }
 
+/* .HeaderGroup {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+} */
+
 .HeaderGroup {
-    max-width:800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    justify-items: center;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.actionLink {
+  margin-left: 30px;
 }
 
 .Header a {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .Header button {
-    padding: 8px 20px;
-    font-size: 20px;
-    background: #fff;
-    border-radius: 10px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    cursor: pointer;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+  padding: 8px 20px;
+  font-size: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Header button:hover {
-    background: white;
-    color: black;
-    box-shadow: 0 10px 20px rgba(0,0,0, 0.25);
-    transform: translateY(-3px);
+  background: white;
+  color: black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
 }
 
 @media (max-width: 640px) {
-    .Header {
-        padding: 15px 0;
-    }
+  .Header {
+    padding: 15px 0;
+  }
 
-    .HeaderGroup {
-        grid-template-columns: repeat(4, auto);
-    }
+  .HeaderGroup {
+    grid-template-columns: repeat(4, auto);
+  }
 
-    .Header a:nth-child(4) {
-        display: none;
-    }
+  .Header a:nth-child(4) {
+    display: none;
+  }
 }

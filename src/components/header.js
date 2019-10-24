@@ -38,10 +38,17 @@ class Header extends React.Component {
               width="40"
             />
           </Link>
-          <Link to="/#work">Work</Link>
-          <Link to="/#skills">Skills</Link>
-          <Link to="/#contact">Say Hi</Link>
-          {/* <Link to="/buy"><button>Say Hi!</button></Link> */}
+          <nav className="actions">
+            <Link className="actionLink" to="/#work">
+              Work
+            </Link>
+            <Link className="actionLink" to="/#skills">
+              Skills
+            </Link>
+            <Link className="actionLink" to="/#contact">
+              Say Hi
+            </Link>
+          </nav>
         </div>
       </div>
     )

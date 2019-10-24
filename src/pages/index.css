@@ -46,7 +46,7 @@ a {
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 140px;
+  row-gap: 100px;
   -webkit-column-gap: 40px;
   column-gap: 40px;
   justify-items: center;
