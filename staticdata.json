@@ -1,52 +1,40 @@
 {
   "cells": [
     {
-      "title": "HTML Markup and Templating",
-      "image": "../images/skills-icon.svg"
+      "title": "HTML Markup and Templating"
     },
     {
-      "title": "CSS, SASS & Styled Components",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "CSS, SASS & Styled Components"
     },
     {
-      "title": "Vanilla JavaScript, Frameworks & Libraries",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "JavaScript, React, React Native, Gatsby"
     },
     {
-      "title": "SVG & Interaction Animation using GSAP",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "Netlify, Contentful, Firebase, MYSQL"
     },
     {
-      "title": "UI Design with Figma & Sketch",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "REST, APIs, Apollo & GraphQL"
     },
     {
-      "title": "Wordpress, Contentful, Firebase & Netlify",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "GIT & GIT driven workflow"
     },
     {
-      "title": "React, React Native & Gatsby",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "Bootstrap, Foundation, MaterialCSS"
     },
     {
-      "title": "Bootstrap, Foundation, MaterialCSS & CSSGrid",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "Wordpress & WooCommerce"
     },
     {
-      "title": "Sizmek, FlashTalking & DoubleClick (certified)",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "Greensock (GSAP) Animation"
     },
     {
-      "title": "REST, APIs, Apollo & GraphQL",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "UI Design, Prototyping (Figma, Sketch)"
     },
     {
-      "title": "GIT & GIT driven workflow",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "Sizmek, FlashTalking, DoubleClick"
     },
     {
-      "title": "Agile, Jira, Slack, Trello & Google Docs",
-      "image": "https://digz.com.au/portfolio/img/skills-icon.svg"
+      "title": "Agile, Jira, Slack, Trello & Google Docs"
     }
   ]
 }
