@@ -5,6 +5,7 @@
   "author": "Jake Kemsley <jakepeg@gmail.com>",
   "dependencies": {
     "gatsby": "^2.17.2",
+    "gatsby-plugin-google-gtag": "^1.1.14",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.13",
