@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const CellGroup = styled.div`
   display: grid;
-  grid-template-columns: 60px auto;
+  grid-template-columns: 35px auto;
   grid-gap: 0;
   align-items: center;
   min-width: 320px;
@@ -15,10 +15,9 @@ const CellGroup = styled.div`
 `
 
 const CellImage = styled.div`
-  width: 27px;
-  height: 27px;
-  opacity: 0.8;
-  border-radius: 0px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
 `
 
 const CellTitle = styled.div`
