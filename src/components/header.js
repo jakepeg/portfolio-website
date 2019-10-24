@@ -45,7 +45,7 @@ class Header extends React.Component {
             <Link className="actionLink" to="/#skills">
               Skills
             </Link>
-            <Link className="actionLink" to="/#contact">
+            <Link className="actionLink sayHi" to="/#contact">
               Say Hi
             </Link>
           </nav>

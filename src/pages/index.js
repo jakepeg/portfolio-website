@@ -205,7 +205,7 @@ const IndexPage = ({ children, data }) => (
             <p className="italica">
               Tons of experience creating scalable, accessible, search
               optimised, secure and blazingly fast (JAMStack) websites, apps,
-              EDM’s and rich media banners using the following tools
+              PWAs, EDMs and rich media banners using the following tools
             </p>
           </div>
 
