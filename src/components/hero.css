@@ -47,10 +47,15 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background: #e94969;
+  background: rgba(233, 73, 105, 1);
   padding: 9px 20px;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 20px;
+  transition: 0.7s;
+}
+
+.hero .Button:hover {
+  background: rgba(95, 143, 216, 0);
 }
 
 #canvas {

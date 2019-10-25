@@ -12,15 +12,6 @@
   backdrop-filter: blur(20px);
 }
 
-/* .HeaderGroup {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  align-items: center;
-  justify-items: center;
-} */
-
 .HeaderGroup {
   display: flex;
   align-items: center;
@@ -39,10 +30,17 @@
 
 .actionLink {
   margin-left: 30px;
+  color: #ddd;
+  transition: 0.4s;
+}
+
+.actionLink:hover {
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 .Header a {
-  font-weight: 700;
+  /* color: #000; */
 }
 
 .Header button {
