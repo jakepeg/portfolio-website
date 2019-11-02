@@ -31,8 +31,9 @@ const Footer = props => (
 
       <img alt="Mugshot" src={require('../images/poly-jake.svg')} width="200" />
       <p>
-        +41 (0)76 536 2302 <br />
-        jakepeg@gmail.com
+        <a href="tel:+41765362302">+41 (0)76 536 2302</a>
+        <br />
+        <a href="mailto:hello@jakekemsley.com">hello@jakekemsley.com</a>
       </p>
       <div className="Logos">
         <span />
