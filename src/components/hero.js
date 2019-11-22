@@ -2,11 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Wave from './wave'
 import './hero.css'
+import './cta.css'
 
 const Hero = props => (
   <div className="hero">
-    {/* <canvas id="canvas" /> */}
-
     <div className="heroGroup">
       <h1>
         Jake Kemsley
@@ -20,16 +19,9 @@ const Hero = props => (
         <br />
         fresh technology
       </p>
-      <Link className="Button" to="/#work">
+      <Link className="cta" to="/#work">
         See my work
       </Link>
-      {/* <div className="Logos">
-            <a href="https://www.linkedin.com/in/jkemsley/"><img src={require('../images/logo-linkedin.svg')} width="40" /></a>
-            <a href="https://twitter.com/kempstead"><img src={require('../images/logo-twitter.svg')} width="40" /></a>
-            <a href="https://www.instagram.com/jakekempo/"><img src={require('../images/logo-instagram.svg')} width="40" /></a>
-            <a href="https://github.com/jakepeg"><img src={require('../images/logo-git.svg')} width="40" /></a>
-        </div> */}
-
       <Wave />
     </div>
   </div>

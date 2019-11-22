@@ -41,23 +41,6 @@
   margin-bottom: 69px;
 }
 
-.hero .Button {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: rgba(233, 73, 105, 1);
-  padding: 9px 20px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 20px;
-  transition: 0.7s;
-}
-
-.hero .Button:hover {
-  background: rgba(95, 143, 216, 0);
-}
-
 #canvas {
   position: fixed;
   top: 0;

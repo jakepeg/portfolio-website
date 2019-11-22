@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import { Card } from '../components/card'
 import staticdata from '../../staticdata.json'
 import Cell from '../components/cell'
@@ -24,6 +24,16 @@ const SectionCellGroup = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `
+
+const moreWork = () => {
+  console.log('more work please')
+  let MoreCards = document.querySelector('.MoreCards')
+  let SeeMore = document.querySelector('.SeeMore')
+  MoreCards.classList.remove('Hidden')
+  SeeMore.classList.add('Hidden')
+  //MoreCards.classList.add('MoreCardsVisible')
+}
+
 const IndexPage = ({ children, data }) => (
   <StaticQuery
     query={graphql`
@@ -167,21 +177,21 @@ const IndexPage = ({ children, data }) => (
               />
 
               <Card
-                client="Leo Burnett Melbournne"
+                client="Leo Burnett Melbourne"
                 project="Old El Paso Pachanga"
                 role="Developer"
                 technology="HTML5, CSS, JS, Sizmek"
                 poster="../elpasso-poster.jpg"
                 id="002"
                 link="../pachanga/index.html"
-                createdAt="monnday"
+                createdAt="monday"
                 projecttype="Banner"
                 width="300"
                 height="600"
               />
 
               <Card
-                client="Clemenger BBDO Melbournne"
+                client="Clemenger BBDO Melbourne"
                 project="Mercedes Instantly Thrilling"
                 role="Developer"
                 technology="HTML5, CSS, JS, DoubleClick"
@@ -192,6 +202,42 @@ const IndexPage = ({ children, data }) => (
                 projecttype="Banner"
                 width="970"
                 height="660"
+              />
+            </div>
+
+            <div className="SeeMore">
+              <Link className="cta" onClick={moreWork} to="/#MoreWork">
+                See more work
+              </Link>
+            </div>
+
+            <div id="MoreWork" className="CardGroup MoreCards Hidden">
+              <Card
+                client="MCN Sydney"
+                project="Twozies Game"
+                role="Developer"
+                technology="Javascript, HTML5, Sizmek"
+                poster="../twozies/poster.jpg"
+                id="004"
+                link="../twozies/index.html"
+                createdAt="yesterday"
+                projecttype="Banner Game"
+                width="602"
+                height="372"
+              />
+
+              <Card
+                client="MCN Sydney"
+                project="McDonalds Footy"
+                role="Developer"
+                technology="HTML5, CSS, JS, Sizmek"
+                poster="../mcdonalds-poster.jpg"
+                id="005"
+                link="../mcdonalds/index.html"
+                createdAt="monday"
+                projecttype="Banner"
+                width="300"
+                height="300"
               />
             </div>
           </div>
