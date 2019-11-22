@@ -222,8 +222,8 @@ const IndexPage = ({ children, data }) => (
                 link="../twozies/index.html"
                 createdAt="yesterday"
                 projecttype="Banner Game"
-                width="602"
-                height="372"
+                width="600"
+                height="350"
               />
 
               <Card
@@ -231,13 +231,83 @@ const IndexPage = ({ children, data }) => (
                 project="McDonalds Footy"
                 role="Developer"
                 technology="HTML5, CSS, JS, Sizmek"
-                poster="../mcdonalds-poster.jpg"
+                poster="../mcdonalds/poster.jpg"
                 id="005"
                 link="../mcdonalds/index.html"
                 createdAt="monday"
                 projecttype="Banner"
                 width="300"
+                height="250"
+              />
+
+              <Card
+                client="Clemenger BBDO Melbourne"
+                project="TAC - How safe is your car"
+                role="Developer"
+                technology="HTML5, CSS, JS, DoubleClick"
+                poster="../tac/poster.jpg"
+                id="006"
+                link="../tac/index.html"
+                createdAt="tuesday"
+                projecttype="Banner"
+                width="300"
+                height="250"
+              />
+
+              <Card
+                client="Loud and Clear"
+                project="VicRoads - ABS"
+                role="Developer"
+                technology="HTML5, CSS, JS, DoubleClick"
+                poster="../vicroads/poster.jpg"
+                id="007"
+                link="../vicroads/index.html"
+                createdAt="tuesday"
+                projecttype="Banner"
+                width="300"
+                height="250"
+              />
+
+              <Card
+                client="Clemenger BBDO Melbourne"
+                project="MLC - Business Super"
+                role="Developer"
+                technology="HTML5, CSS, JS, DoubleClick"
+                poster="../mlc/poster.jpg"
+                id="008"
+                link="../mlc/index.html"
+                createdAt="tuesday"
+                projecttype="Banner"
+                width="300"
+                height="600"
+              />
+
+              <Card
+                client="Accelerator Melbourne"
+                project="Honda - Starts First TIme"
+                role="Developer"
+                technology="HTML5, CSS, JS, DoubleClick"
+                poster="../honda/poster.jpg"
+                id="009"
+                link="../honda/index.html"
+                createdAt="tuesday"
+                projecttype="Banner"
+                width="250"
                 height="300"
+              />
+
+              <Card
+                client="Cummins Melbourne"
+                project="Specsaves - Designer Glasses"
+                role="Developer"
+                technology="HTML5, CSS, JS, DoubleClick"
+                poster="../specsavers/poster.jpg"
+                id="010"
+                link="../specsavers/index.html"
+                createdAt="tuesday"
+                projecttype="Banner"
+                width="300"
+                height="600"
               />
             </div>
           </div>

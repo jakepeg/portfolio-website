@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 300x250</title>
+    <link rel="stylesheet" href="css/style.css?cache=234111234" />
+</head>
+<body onLoad="doAnim()">
+    <div id="ad">
+        <div id="banner">
+        	  <div id="feature-list"></div>
+			  <div id="letter-a"></div>
+              <div id="letter-e"></div>
+			  <div id="letter-b"></div>
+              <div id="copy1"></div>
+        	  <div id="gradient"></div>
+			  <div id="copy2"></div>
+              <div id="copy3"></div>
+			  <div id="checker"></div>
+		  	  <div id="logo"></div> 
+			  <div id="left-curve"></div> 
+			  <div id="right-curve"></div> 
+        </div>
+    </div>
+    
+   <script type="text/javascript" src="tweenmax.js"></script><script>
+		doAnim = function() {			
+			var TL1 = new TimelineMax({repeat:0, repeatDelay:2.5});
+			TL1.set("#banner", {visibility:"visible"})
+			.from('#gradient', 0.1, {opacity: 0, ease: Power4.easeInOut})
+			.to('#feature-list', 0.3, {top: -70, ease: Power4.easeIn})
+			.to('#feature-list', 0.3, {top: -111, ease: Power4.easeIn},'+=0.01')
+			.to('#feature-list', 0.3, {top: -152, ease: Power4.easeIn},'+=0.01')
+			.to('#feature-list', 0.3, {top: -193, ease: Power4.easeIn},'+=0.01')
+			.to('#feature-list', 0.3, {top: -234, ease: Power4.easeIn},'+=0.01')
+			.to('#feature-list', 0.3, {top: -275, ease: Power4.easeIn},'+=0.01')
+			.to('#feature-list', 0.3, {top: -316, ease: Power4.easeIn},'+=0.01')
+			.to('#feature-list', 0.3, {top: -357, ease: Power4.easeIn},'+=0.01')
+			.from('#letter-a', 0.1, {opacity: 0, ease: Power4.easeInOut})
+			.from('#letter-e', 0.1, {opacity: 0, ease: Power4.easeInOut},'-=0.1')
+			.from('#letter-b', 0.1, {opacity: 0, ease: Power4.easeInOut},'-=0.1')
+			.to('#feature-list', 0.5, {opacity: 0, ease: Power4.easeInOut})
+			.to('#gradient', 0.1, {opacity: 0, ease: Power4.easeInOut})
+			.to('#letter-a', 0.5, {left: -105, ease: Power4.easeInOut})
+			.to('#letter-e', 0.5, {left: -64, ease: Power4.easeInOut},'-=0.5')
+			.to('#letter-b', 0.5, {left: 41, ease: Power4.easeInOut},'-=0.5')
+			.from('#copy1', 0.5, {opacity: 0, ease: Power4.easeInOut})
+			.to('#letter-a', 0.5, {opacity: 0, ease: Power4.easeInOut})
+			.to('#letter-e', 0.5, {opacity: 0, ease: Power4.easeInOut},'-=0.5')
+			.to('#letter-b', 0.5, {opacity: 0, ease: Power4.easeInOut},'-=0.5')
+			.from('#checker', 0.8, {top: 30, ease: Power4.easeInOut},'-=0.5')
+			.to('#copy1', 0.5, {opacity: 0, ease: Power4.easeInOut},'+=1.5')
+			.from('#copy2', 0.5, {opacity: 0, ease: Power4.easeInOut})
+			.to('#copy2', 0.5, {opacity: 0, ease: Power4.easeInOut},'+=3')
+			.to('#checker', 0.8, {top: 30, ease: Power4.easeInOut})
+			.from('#copy3', 0.8, {opacity: 0, ease: Power4.easeInOut},'-=0.5')
+			.from('#left-curve', 0.8, {left: -300, ease: Power4.easeOut},'+=1')
+			.from('#right-curve', 0.8, {left: 300, ease: Power4.easeOut},'-=0.8')
+			.from('#logo', 0.8, {opacity: 0, ease: Power4.easeIn},'-=0.8');
+		};
+		
+    		var clickTag = "";
+           onExitHandler = function(){
+            window.open(window.clickTag);
+        }		
+	   document.getElementById('ad').addEventListener('click', onExitHandler, false);
+	</script>
+</body>
+
+</html>

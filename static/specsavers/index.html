@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/EBLoader.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body onLoad="doAnim()">
+    <div id="ad">
+        <div id="banner">
+          <div id="logo"></div>
+          <div id="cta"></div>
+          <div id="hack"></div>
+          <div id="copy1"></div>
+          <div id="disclaimer"></div>
+              <div id="flip-container">
+                  <div id="flipper">
+                    <div class="front">
+                        <div id="copy2"></div>
+                        <div id="copy4"></div>
+                        <div id="copy6"></div> 
+                    </div>
+                    <div class="back">
+                        <div id="copy3"></div>
+                        <div id="copy5"></div>
+                        <div id="copy7"></div>
+                    </div>
+                  </div>
+              </div>  
+
+          <div id="copy9"></div>
+          <div id="copy10"></div>
+          <div id="copy11"></div>
+              <div id="clickthrough"></div>   
+        </div>
+    </div>
+   <script type="text/javascript" src="scripts/TweenMax.min.js"></script> 
+    <script>
+		doAnim = function() {		
+			var TL1 = new TimelineMax({});
+			TL1.set("#banner", {visibility:"visible"})	
+			.to('#copy1', 0.5, {opacity: 0, ease: Power4.easeIn}, '+=1.2')
+      .from('#copy2', 0, {opacity: 0})
+      .from('#copy3', 0, {opacity: 0})
+			.from('#flip-container', 0.6, {opacity: 0, ease: Power4.easeIn})
+//   .to('#flip-container', 0.2, { rotationZ:-1, ease:Power1.easeOut, onUpdate:onUpdate, onUpdateParams:["{self}"], delay:0.1 }, "swingme")
+//    .to('#flip-container', 0.4, { rotationZ:1, ease:Power1.easeInOut, onUpdate:onUpdate, onUpdateParams:["{self}"], delay:0.2 }, "swingme")
+//    .to('#flip-container', 2, { rotationZ:0, ease:Elastic.easeOut, onUpdate:onUpdate, onUpdateParams:["{self}"], delay:0.6 }, "swingme")
+      .from('#disclaimer', 0.2, {opacity: 0, ease: Power4.easeIn})
+      .to('#hack', 0.2, {opacity: 0, onComplete: showFront}, '+=1.2')
+			.to('#copy2', 0, {opacity: 0}, '+=0.2')
+      .from('#copy4', 0, {opacity: 0}, '+=0.5')
+      .from('#cta', 0.5, {opacity: 0})
+      .to('#hack', 0.2, {opacity: 0, onComplete: go360}, '+=1.2')
+  		.to('#copy3', 0, {opacity: 0}, '+=0.2')
+      .from('#copy5', 0, {opacity: 0}, '+=0.2')
+      .to('#hack', 0.2, {opacity: 0, onComplete: go540}, '+=1.2')
+      .to('#copy4', 0, {opacity: 0}, '+=0.2')
+      .from('#copy6', 0, {opacity: 0}, '+=0.2')
+     .to('#hack', 0.2, {opacity: 0, onComplete: go720}, '+=1.2')
+/*       .to('#copy5', 0, {opacity: 0}, '+=0.2')
+      .from('#copy7', 0, {opacity: 0}, '+=0.2') 
+      .to('#hack', 0.2, {opacity: 0, onComplete: go900}, '+=1.2')*/
+      .to('#flip-container', 0.5, {opacity: 0, ease: Power4.easeIn}, '+=1.5')
+      .to('#disclaimer', 0.5, {opacity: 0, ease: Power4.easeIn}, '-=0.5')
+ //     .from('#copy8', 0.5, {opacity: 0, ease: Power4.easeIn})
+      .from('#copy9', 0.5, {opacity: 0, ease: Power4.easeIn})
+      .from('#copy10', 0.5, {opacity: 0, ease: Power4.easeIn})
+      .from('#copy11', 0.5, {opacity: 0, ease: Power4.easeIn});
+		};
+	</script>
+</body>
+</html>
