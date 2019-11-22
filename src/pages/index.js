@@ -269,20 +269,6 @@ const IndexPage = ({ children, data }) => (
               />
 
               <Card
-                client="Clemenger BBDO Melbourne"
-                project="MLC - Business Super"
-                role="Developer"
-                technology="HTML5, CSS, JS, DoubleClick"
-                poster="../mlc/poster.jpg"
-                id="008"
-                link="../mlc/index.html"
-                createdAt="tuesday"
-                projecttype="Banner"
-                width="300"
-                height="600"
-              />
-
-              <Card
                 client="Accelerator Melbourne"
                 project="Honda - Starts First TIme"
                 role="Developer"
@@ -292,8 +278,8 @@ const IndexPage = ({ children, data }) => (
                 link="../honda/index.html"
                 createdAt="tuesday"
                 projecttype="Banner"
-                width="250"
-                height="300"
+                width="300"
+                height="250"
               />
 
               <Card
