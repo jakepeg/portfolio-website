@@ -204,7 +204,7 @@ const IndexPage = ({ children, data }) => (
                 height="660"
               />
             </div>
-
+            {/* 
             <div className="SeeMore">
               <Link className="cta" onClick={moreWork} to="/#MoreWork">
                 See more work
@@ -295,7 +295,7 @@ const IndexPage = ({ children, data }) => (
                 width="300"
                 height="600"
               />
-            </div>
+            </div> */}
           </div>
           <div id="skills">
             {' '}
