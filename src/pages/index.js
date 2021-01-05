@@ -118,21 +118,30 @@ const IndexPage = ({ children, data }) => (
               />
 
               <CardWebsite
+                poster="../dootools-poster.jpg"
+                client="DooTools"
+                project="SAAS Landing Page"
+                role="Designer / Developer"
+                technology="React, Gatsby, i18next, GIT, Netlify"
+                link="https://www.doo.co"
+              />
+
+              <CardWebsite
+                poster="../discodoo-poster.jpg"
+                client="DiscoverDoo"
+                project="Directory Website"
+                role="Designer / Developer"
+                technology="React, NextJS, Express, Node, MongoDB"
+                link="https://www.discoverdoo.com"
+              />
+
+              <CardWebsite
                 poster="../aussie-poster.jpg"
                 client="WorkingParty Melbourne"
                 project="Aussie Website Redesign"
                 role="Frontend Developer"
                 technology="HTML5, CSS3, BEM, LESS, JS, GIT, Gulp"
                 link="https://www.aussie.com.au/"
-              />
-
-              <CardWebsite
-                poster="../nab-cards-poster.jpg"
-                client="Clemenger BBDO Melbourne"
-                project="NAB Cards Template"
-                role="Frontend Developer"
-                technology="HTML5, Bootstrap, JADE, LESS, JS, GIT, Gulp"
-                link="https://www.nab.com.au/personal/banking/credit-cards"
               />
 
               <CardWebsite
@@ -176,7 +185,7 @@ const IndexPage = ({ children, data }) => (
                 height="500"
               />
 
-              <Card
+              {/* <Card
                 client="Leo Burnett Melbourne"
                 project="Old El Paso Pachanga"
                 role="Developer"
@@ -188,7 +197,7 @@ const IndexPage = ({ children, data }) => (
                 projecttype="Banner"
                 width="300"
                 height="600"
-              />
+              /> */}
 
               <Card
                 client="Clemenger BBDO Melbourne"
@@ -203,6 +212,10 @@ const IndexPage = ({ children, data }) => (
                 width="970"
                 height="660"
               />
+
+
+
+
             </div>
             {/* 
             <div className="SeeMore">
@@ -306,8 +319,7 @@ const IndexPage = ({ children, data }) => (
           <div className="skillz">
             <p className="italica">
               Tons of experience creating scalable, accessible, search
-              optimised, secure and blazingly fast (JAMStack) websites, apps,
-              PWAs, EDMs and rich media banners using the following tools
+              optimised, secure and blazingly fast websites, apps, SPAs, and PWAs using the following tools
             </p>
           </div>
 
