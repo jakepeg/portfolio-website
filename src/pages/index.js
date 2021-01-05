@@ -25,14 +25,14 @@ const SectionCellGroup = styled.div`
   }
 `
 
-const moreWork = () => {
-  console.log('more work please')
-  let MoreCards = document.querySelector('.MoreCards')
-  let SeeMore = document.querySelector('.SeeMore')
-  MoreCards.classList.remove('Hidden')
-  SeeMore.classList.add('Hidden')
-  //MoreCards.classList.add('MoreCardsVisible')
-}
+// const moreWork = () => {
+//   console.log('more work please')
+//   let MoreCards = document.querySelector('.MoreCards')
+//   let SeeMore = document.querySelector('.SeeMore')
+//   MoreCards.classList.remove('Hidden')
+//   SeeMore.classList.add('Hidden')
+//   //MoreCards.classList.add('MoreCardsVisible')
+// }
 
 const IndexPage = ({ children, data }) => (
   <StaticQuery
