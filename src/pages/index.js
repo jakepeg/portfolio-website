@@ -126,6 +126,19 @@ const IndexPage = ({ children, data }) => (
                 link="https://www.doo.co"
               />
 
+
+              <CardWebsite
+                poster="../demo.png"
+                client="Personal"
+                project="Parallax demo"
+                role="Developer"
+                technology="React, React-Spring, Code Snadbox"
+                link="https://b6bby.csb.app"
+              />
+
+
+
+
               <CardWebsite
                 poster="../discodoo-poster.jpg"
                 client="DiscoverDoo"
