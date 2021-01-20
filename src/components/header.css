@@ -3,7 +3,7 @@
   width: 100%;
   padding: 50px 0;
   z-index: 100;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .HeaderScrolled {
@@ -30,14 +30,15 @@
 
 .actionLink {
   margin-left: 30px;
-  color: #ddd;
-  transition: 0.4s;
+  color: #fff;
+  opacity: 0.9;
+  /* transition: 0.4s; */
 }
 
-.actionLink:hover {
+/* .actionLink:hover {
   color: #fff;
   transform: translateY(-3px);
-}
+} */
 
 .Header a {
   /* color: #000; */
