@@ -61,7 +61,6 @@ class Header extends React.Component {
       }
     }
 
-
     const linkVariants = {
       hover: {
         scale: 1.2,

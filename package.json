@@ -5,7 +5,7 @@
   "author": "Jake Kemsley <jakepeg@gmail.com>",
   "dependencies": {
     "framer-motion": "^3.2.1",
-    "gatsby": "^2.29.3",
+    "gatsby": "^2.31.0",
     "gatsby-plugin-google-analytics": "^2.8.0",
     "gatsby-plugin-google-gtag": "^1.2.1",
     "gatsby-plugin-manifest": "^2.9.1",
