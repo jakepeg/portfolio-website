@@ -109,30 +109,30 @@ const IndexPage = ({ children, data }) => (
 
             <div className="CardGroup">
               <CardWebsite
+                poster="../doocoins-poster.png"
+                client="DooCoins"
+                project="Blockchain kids rewards app"
+                role="Designer / Developer"
+                technology="React, Gatsby, Dfinity, Motoko"
+                link="https://www.doo.co"
+              />
+
+              <CardWebsite
+                poster="../starrmade-poster.jpg"
+                client="Starr Made"
+                project="E-commerce website"
+                role="Designer / Developer"
+                technology="Wordpress, WooCommerce"
+                link="https://www.starrmade.com"
+              />
+
+              <CardWebsite
                 poster="../evooq-poster.jpg"
                 client="Evooq Switzerland"
                 project="Company Webiste"
                 role="Frontend Developer"
                 technology="React, Gatsby, Contentful, GIT, Netlify"
                 link="https://www.evooq.ch"
-              />
-
-              <CardWebsite
-                poster="../dootools-poster.jpg"
-                client="DooTools"
-                project="SAAS Landing Page"
-                role="Designer / Developer"
-                technology="React, Gatsby, i18next, GIT, Netlify"
-                link="https://www.doo.co"
-              />
-
-              <CardWebsite
-                poster="../demo.png"
-                client="Personal"
-                project="Parallax demo"
-                role="Developer"
-                technology="React, React-Spring, Code Snadbox"
-                link="https://b6bby.csb.app"
               />
 
               <CardWebsite

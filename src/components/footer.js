@@ -23,15 +23,13 @@ const Footer = props => (
 
       <div className="skillz">
         <p className="italica">
-          If you're looking for someone with my skills then please drop me a
-          line. I'm currently based in St Prex, Switzerland - if you're in the
-          area let's hook up for coffee (or a beer)
+          I'm currently based in sunny Lisbon, hit me up if you're in the area.
         </p>
       </div>
 
       <img alt="Mugshot" src={require('../images/poly-jake.svg')} width="200" />
       <p>
-        <a href="tel:+41765362302">+41 (0)76 536 2302</a>
+        <a href="tel:+351913105397">+351 913 105 397</a>
         <br />
         <a href="mailto:hello@jakekemsley.com">hello@jakekemsley.com</a>
       </p>
