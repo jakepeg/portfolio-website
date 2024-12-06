@@ -109,7 +109,7 @@ class Header extends React.Component {
             <motion.div
               variants={linkVariants}
               whileHover="hover" 
-            >Say Hi</motion.div>
+            >Say Hi!</motion.div>
             </Link>
           </motion.nav>
         </div>
