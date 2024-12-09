@@ -1,0 +1,480 @@
+body {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-display: fallback;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  background-color: #212c40;
+  overflow-x: hidden;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 100;
+  background: transparent;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Header.scrolled {
+  background: black;
+  transform: translateY(-20px);
+  padding: 30px 0px 5px 0;
+  opacity: .9;
+}
+
+.HeaderGroup {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.Header button {
+  padding: 8px 20px;
+  font-size: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Header button:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
+
+/* Add a class for the logo */
+.logo img {
+  transition: transform 0.8s ease;
+}
+
+/* Spin twice on hover */
+.logo img:hover {
+  transform: rotate(720deg); /* 2 full spins */
+}
+
+
+@media (max-width: 640px) {
+  .Header {
+    padding: 15px 0;
+  }
+
+  .sayHi {
+    display: none;
+  }
+}
+
+.hero {
+  background: url(/images/trianglify.svg);
+  height: 920px;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.actions, .HeaderGroup {
+  display: flex;
+  align-items: center;
+}
+
+.heroGroup {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+}
+
+.actions {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.actionLink {
+  margin-left: 30px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.actionLink {
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+}
+
+.actionLink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.actionLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 50px 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  color: #5f8fd8;
+}
+
+.hero p {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 69px;
+}
+
+.hero-svg {
+  position: absolute;
+  top: 600px;
+  left: 0;
+}
+
+.cta {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #e94969;
+  padding: 9px 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+
+  /* Transition for smooth scaling */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.cta:hover {
+  transform: scale(1.15); /* Grows the button by 15% */
+  background-color: #000; /* Optional: slightly darker background on hover */
+}
+
+
+.zContainer {
+  position: absolute;
+  z-index: 20;
+  background-color: #212c40;
+  width: 100%;
+  /* margin-top: -50px; */
+}
+
+.Cards {
+  width: 100%;
+  margin-top: -50px;
+}
+
+.skillz {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  justify-items: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.skillz p {
+  color: hsla(0, 0%, 100%, .8);
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 50px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.italica {
+  color: #ccc !important;
+  font-style: italic;
+}
+
+.bhGuCm {
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1350px) {
+  .CardGroup {
+    row-gap: 100px;
+  }
+}
+
+.CardGroup {
+  margin: 10px auto 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 100px;
+  column-gap: 40px;
+  justify-items: center;
+  height: auto;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.Card {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+.Card:hover {
+  transform: scale(1, 1);
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+}
+
+.Card img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: 0px solid red;
+}
+
+.Card-info {
+  padding: 20px 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  background: #1d8cc2;
+  height: 250px;
+  z-index: 101;
+}
+
+.Card-info:hover {
+  opacity: 1;
+  background: #5f8fd8;
+  height: 250px;
+}
+
+.Card p {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  font-size: 18px;
+  align-self: end;
+  margin: 0 20px;
+}
+
+.Card-label {
+  color: #fff;
+  font-size: 11px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.Card-title {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.Card-link {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-right: 5px;
+  position: absolute;
+  margin-top: 0;
+}
+
+.showModalStyle {
+  display: block;
+}
+
+.hideModalStyle {
+  display: none;
+}
+
+.footer {
+  background: url('../images/trianglify.svg');
+  height: 950px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.footer svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footerGroup {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer h2 {
+  color: #5f8fd8;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 69px;
+}
+
+@media (max-width: 640px) {
+  .footerGroup {
+    padding: 100px 20px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+
+  .footer {
+    height: 1084px;
+  }
+}
+
+.Logos img {
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Logos img:hover {
+  width: 50px;
+}
+
+.hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin: 100px 0;
+  justify-items: center;
+}
+
+@media (max-width: 640px) {
+  .hero .Logos, .footer .Logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#contact {
+  height: 150px;
+}
+
+.photo {
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 100px;
+  z-index: 80;
+}
+
+.image {
+  z-index: 85;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.shim {
+  position: fixed;
+  background: rgba(29, 140, 194, 0.9);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 99;
+  text-align: center;
+}
