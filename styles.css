@@ -106,18 +106,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 a {
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 
@@ -219,25 +211,23 @@ h2 {
 .skillz {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 40px;
   justify-items: center;
-  height: auto;
-  overflow: hidden;
 }
 
 .skillz p {
   color: hsla(0, 0%, 100%, .8);
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.5;
   margin: 0 0 50px;
-  max-width: 1000px;
+  max-width: 820px;
   text-align: center;
+  width: 90%;
 }
 
 .italica {
   color: #ccc !important;
   font-style: italic;
+  text-align: center;
 }
 
 .bhGuCm {
@@ -247,11 +237,7 @@ h2 {
   transform: rotate(180deg);
 }
 
-@media (max-width: 1350px) {
-  .CardGroup {
-    row-gap: 100px;
-  }
-}
+
 
 .CardGroup {
   margin: 10px auto 50px auto;
@@ -263,6 +249,19 @@ h2 {
   height: auto;
   overflow: hidden;
   max-width: 1200px;
+}
+
+@media (max-width: 1160px) {
+  .CardGroup {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 925px) {
+  .CardGroup {
+    row-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .Card {
@@ -295,6 +294,7 @@ h2 {
   background: #1d8cc2;
   height: 250px;
   z-index: 101;
+  position: relative; 
 }
 
 .Card-info:hover {
@@ -336,8 +336,8 @@ h2 {
   font-weight: 600;
   text-decoration: underline;
   margin-right: 5px;
-  position: absolute;
-  margin-top: 0;
+  position: absolute; /* Allow positioning relative to the nearest relative parent */
+  bottom: 55px; /* Fix 10px from the bottom of the Card-info */
 }
 
 .showModalStyle {
@@ -350,7 +350,7 @@ h2 {
 
 .footer {
   background: url('../images/trianglify.svg');
-  height: 950px;
+  height: 620px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -376,9 +376,9 @@ h2 {
 
 .footer p {
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.5;
-  margin-bottom: 69px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 640px) {
@@ -386,13 +386,20 @@ h2 {
     padding: 100px 20px;
   }
 
-  .footer p {
+  .skillz p {
     font-size: 20px;
   }
 
   .footer {
     height: 1084px;
   }
+}
+
+.footer .Logos {
+  display: grid;
+  grid-template-columns: auto 40px 40px 40px 40px auto;
+  grid-gap: 20px;
+  justify-items: center;
 }
 
 .Logos img {
@@ -414,7 +421,7 @@ h2 {
 }
 
 @media (max-width: 640px) {
-  .hero .Logos, .footer .Logos {
+  .hero .Logos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
